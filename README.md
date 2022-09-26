@@ -1,8 +1,8 @@
-# Sonic BGE Project\n
-a framework for Sonic in UPBGE 0.3\n\n
-\n
+# Sonic BGE Project
+a framework for Sonic in UPBGE 0.3
+
 please, if you're reading this, mind that's not a finished project\n
-\n
+
 Version 0.1a:
 -Sonic Controller 1.0:
   -8 directions third person movement
