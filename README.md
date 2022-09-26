@@ -1,4 +1,4 @@
-# sonicBGEproject
+# Sonic BGE Project
 a framework for Sonic in UPBGE 0.3
 
 please, if you're reading this, mind that's not a finished project
