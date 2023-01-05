@@ -1,0 +1,8 @@
+{
+  "resolution": 1,
+  "ambientOcclusion": true,
+  "ssr": true,
+  "vsync": false,
+  "showfps": true,
+  "bloom": true
+}

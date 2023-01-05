@@ -77,32 +77,30 @@ def _initialize(owner):
     CON0068 = nodes.ConditionOnUpdate()
     CON0069 = nodes.ObjectPropertyOperator()
     ACT0070 = nodes.GEShowFramerate()
-    ACT0071 = nodes.ActionLoadVariable()
-    ACT0072 = nodes.SetEeveeBloom()
-    ACT0073 = nodes.SetEeveeAO()
-    ACT0074 = nodes.SetEeveeSMAA()
-    ACT0075 = nodes.ActionLoadVariable()
-    ACT0076 = nodes.ActionSetGameObjectGameProperty()
-    ACT0077 = nodes.SetEeveeSSR()
-    ACT0078 = nodes.ActionLoadVariable()
-    ACT0079 = nodes.ActionLoadVariable()
-    ACT0080 = nodes.ActionLoadVariable()
-    ACT0081 = nodes.ActionSetGameObjectVisibility()
-    ACT0082 = nodes.ActionSaveVariable()
+    ACT0071 = nodes.ActionSetGameObjectVisibility()
+    ACT0072 = nodes.ActionSaveVariable()
+    ACT0073 = nodes.ActionSaveVariable()
+    ACT0074 = nodes.ActionSaveVariable()
+    ACT0075 = nodes.ActionSaveVariable()
+    ACT0076 = nodes.ActionSaveVariable()
+    CON0077 = nodes.ConditionAndList()
+    ACT0078 = nodes.ActionSetGameObjectGameProperty()
+    PAR0079 = nodes.ParameterObjectProperty()
+    ACT0080 = nodes.ActionSetVSync()
+    ACT0081 = nodes.ActionSetVSync()
+    CON0082 = nodes.ObjectPropertyOperator()
     ACT0083 = nodes.ActionSaveVariable()
-    ACT0084 = nodes.ActionSaveVariable()
-    ACT0085 = nodes.ActionSaveVariable()
-    ACT0086 = nodes.ActionSaveVariable()
-    CON0087 = nodes.ConditionAndList()
-    ACT0088 = nodes.ActionSetGameObjectGameProperty()
+    CON0084 = nodes.ObjectPropertyOperator()
+    ACT0085 = nodes.SetEeveeBloom()
+    ACT0086 = nodes.SetEeveeAO()
+    ACT0087 = nodes.ActionLoadVariable()
+    ACT0088 = nodes.SetEeveeSSR()
     ACT0089 = nodes.ActionLoadVariable()
-    ACT0090 = nodes.GEShowFramerate()
-    PAR0091 = nodes.ParameterObjectProperty()
-    CON0092 = nodes.ObjectPropertyOperator()
-    ACT0093 = nodes.ActionSetVSync()
-    ACT0094 = nodes.ActionSetVSync()
-    CON0095 = nodes.ObjectPropertyOperator()
-    ACT0096 = nodes.ActionSaveVariable()
+    ACT0090 = nodes.ActionLoadVariable()
+    ACT0091 = nodes.ActionLoadVariable()
+    ACT0092 = nodes.ActionSetGameObjectGameProperty()
+    ACT0093 = nodes.ActionLoadVariable()
+    ACT0094 = nodes.GEShowFramerate()
     ACT0000.condition = CON0001
     ACT0000.game_object = "NLO:Plane.009"
     ACT0000.property_name = "prop"
@@ -316,104 +314,98 @@ def _initialize(owner):
     CON0069.property_name = "toggle"
     CON0069.compare_value = True
     CON0069.operator = 0
-    ACT0070.condition = ACT0081.OUT
-    ACT0070.use_framerate = PAR0091
-    ACT0071.path = '//saves'
-    ACT0071.file_name = 'settings'
-    ACT0071.condition = CON0056
-    ACT0071.name = "bloom"
-    ACT0072.condition = ACT0071.OUT
-    ACT0072.value = ACT0071.VAR
-    ACT0073.condition = ACT0080.OUT
-    ACT0073.value = ACT0080.VAR
-    ACT0074.condition = ACT0079.OUT
-    ACT0074.value = ACT0079.VAR
+    ACT0070.condition = ACT0071.OUT
+    ACT0070.use_framerate = PAR0079
+    ACT0071.condition = CON0068
+    ACT0071.game_object = "NLO:toggleBostil.001"
+    ACT0071.visible = PAR0067
+    ACT0071.recursive = False
+    ACT0072.path = '//saves'
+    ACT0072.file_name = 'settings'
+    ACT0072.condition = CON0060
+    ACT0072.name = "ssr"
+    ACT0072.val = PAR0053
+    ACT0073.path = '//saves'
+    ACT0073.file_name = 'settings'
+    ACT0073.condition = CON0060
+    ACT0073.name = "ambientOcclusion"
+    ACT0073.val = PAR0063
+    ACT0074.path = '//saves'
+    ACT0074.file_name = 'settings'
+    ACT0074.condition = CON0060
+    ACT0074.name = "bloom"
+    ACT0074.val = PAR0050
     ACT0075.path = '//saves'
     ACT0075.file_name = 'settings'
-    ACT0075.condition = CON0056
+    ACT0075.condition = CON0060
     ACT0075.name = "vsync"
-    ACT0076.condition = ACT0075.OUT
-    ACT0076.game_object = "NLO:Camera"
-    ACT0076.property_name = "vsync"
-    ACT0076.property_value = ACT0075.VAR
-    ACT0077.condition = ACT0078.OUT
-    ACT0077.value = ACT0078.VAR
-    ACT0078.path = '//saves'
-    ACT0078.file_name = 'settings'
-    ACT0078.condition = CON0056
-    ACT0078.name = "ssr"
-    ACT0079.path = '//saves'
-    ACT0079.file_name = 'settings'
-    ACT0079.condition = CON0056
-    ACT0079.name = "smaa"
-    ACT0080.path = '//saves'
-    ACT0080.file_name = 'settings'
-    ACT0080.condition = CON0056
-    ACT0080.name = "ambientOcclusion"
-    ACT0081.condition = CON0068
-    ACT0081.game_object = "NLO:toggleBostil.001"
-    ACT0081.visible = PAR0067
-    ACT0081.recursive = False
-    ACT0082.path = '//saves'
-    ACT0082.file_name = 'settings'
-    ACT0082.condition = CON0060
-    ACT0082.name = "ssr"
-    ACT0082.val = PAR0053
+    ACT0075.val = PAR0059
+    ACT0076.path = '//saves'
+    ACT0076.file_name = 'settings'
+    ACT0076.condition = CON0060
+    ACT0076.name = "showfps"
+    ACT0076.val = PAR0079
+    CON0077.ca = ACT0072.OUT
+    CON0077.cb = ACT0073.OUT
+    CON0077.cc = ACT0074.OUT
+    CON0077.cd = ACT0075.OUT
+    CON0077.ce = ACT0076.OUT
+    CON0077.cf = ACT0083.OUT
+    ACT0078.condition = CON0077
+    ACT0078.game_object = "NLO:Plane.002"
+    ACT0078.property_name = "write"
+    ACT0078.property_value = False
+    PAR0079.game_object = "NLO:bosti.001"
+    PAR0079.property_name = "fps"
+    ACT0080.condition = CON0084
+    ACT0080.vsync_mode = bge.render.VSYNC_OFF
+    ACT0081.condition = CON0082
+    ACT0081.vsync_mode = bge.render.VSYNC_ON
+    CON0082.game_object = "NLO:Camera"
+    CON0082.property_name = "vsync"
+    CON0082.compare_value = True
+    CON0082.operator = 0
     ACT0083.path = '//saves'
     ACT0083.file_name = 'settings'
-    ACT0083.condition = CON0060
-    ACT0083.name = "ambientOcclusion"
-    ACT0083.val = PAR0063
-    ACT0084.path = '//saves'
-    ACT0084.file_name = 'settings'
-    ACT0084.condition = CON0060
-    ACT0084.name = "bloom"
-    ACT0084.val = PAR0050
-    ACT0085.path = '//saves'
-    ACT0085.file_name = 'settings'
-    ACT0085.condition = CON0060
-    ACT0085.name = "vsync"
-    ACT0085.val = PAR0059
-    ACT0086.path = '//saves'
-    ACT0086.file_name = 'settings'
-    ACT0086.condition = CON0060
-    ACT0086.name = "showfps"
-    ACT0086.val = PAR0091
-    CON0087.ca = ACT0082.OUT
-    CON0087.cb = ACT0083.OUT
-    CON0087.cc = ACT0084.OUT
-    CON0087.cd = ACT0085.OUT
-    CON0087.ce = ACT0086.OUT
-    CON0087.cf = ACT0096.OUT
-    ACT0088.condition = CON0087
-    ACT0088.game_object = "NLO:Plane.002"
-    ACT0088.property_name = "write"
-    ACT0088.property_value = False
+    ACT0083.condition = CON0069
+    ACT0083.name = "resolution"
+    ACT0083.val = PAR0052
+    CON0084.game_object = "NLO:Camera"
+    CON0084.property_name = "vsync"
+    CON0084.compare_value = False
+    CON0084.operator = 0
+    ACT0085.condition = ACT0091.OUT
+    ACT0085.value = ACT0091.VAR
+    ACT0086.condition = ACT0090.OUT
+    ACT0086.value = ACT0090.VAR
+    ACT0087.path = '//saves'
+    ACT0087.file_name = 'settings'
+    ACT0087.condition = CON0056
+    ACT0087.name = "vsync"
+    ACT0088.condition = ACT0089.OUT
+    ACT0088.value = ACT0089.VAR
     ACT0089.path = '//saves'
     ACT0089.file_name = 'settings'
     ACT0089.condition = CON0056
-    ACT0089.name = "fps"
-    ACT0090.condition = ACT0089.OUT
-    ACT0090.use_framerate = ACT0089.VAR
-    PAR0091.game_object = "NLO:bosti.001"
-    PAR0091.property_name = "fps"
-    CON0092.game_object = "NLO:Camera"
-    CON0092.property_name = "vsync"
-    CON0092.compare_value = False
-    CON0092.operator = 0
-    ACT0093.condition = CON0092
-    ACT0093.vsync_mode = bge.render.VSYNC_OFF
-    ACT0094.condition = CON0095
-    ACT0094.vsync_mode = bge.render.VSYNC_ON
-    CON0095.game_object = "NLO:Camera"
-    CON0095.property_name = "vsync"
-    CON0095.compare_value = True
-    CON0095.operator = 0
-    ACT0096.path = '//saves'
-    ACT0096.file_name = 'settings'
-    ACT0096.condition = CON0069
-    ACT0096.name = "resolution"
-    ACT0096.val = PAR0052
+    ACT0089.name = "ssr"
+    ACT0090.path = '//saves'
+    ACT0090.file_name = 'settings'
+    ACT0090.condition = CON0056
+    ACT0090.name = "ambientOcclusion"
+    ACT0091.path = '//saves'
+    ACT0091.file_name = 'settings'
+    ACT0091.condition = CON0056
+    ACT0091.name = "bloom"
+    ACT0092.condition = ACT0087.OUT
+    ACT0092.game_object = "NLO:Camera"
+    ACT0092.property_name = "vsync"
+    ACT0092.property_value = ACT0087.VAR
+    ACT0093.path = '//saves'
+    ACT0093.file_name = 'settings'
+    ACT0093.condition = CON0056
+    ACT0093.name = "fps"
+    ACT0094.condition = ACT0093.OUT
+    ACT0094.use_framerate = ACT0093.VAR
     network.add_cell(CON0001)
     network.add_cell(CON0006)
     network.add_cell(ACT0008)
@@ -442,9 +434,10 @@ def _initialize(owner):
     network.add_cell(CON0065)
     network.add_cell(PAR0067)
     network.add_cell(CON0069)
-    network.add_cell(ACT0083)
-    network.add_cell(PAR0091)
-    network.add_cell(CON0095)
+    network.add_cell(ACT0073)
+    network.add_cell(PAR0079)
+    network.add_cell(CON0082)
+    network.add_cell(CON0084)
     network.add_cell(ACT0000)
     network.add_cell(ACT0007)
     network.add_cell(ACT0011)
@@ -464,14 +457,14 @@ def _initialize(owner):
     network.add_cell(PAR0064)
     network.add_cell(CON0068)
     network.add_cell(ACT0071)
-    network.add_cell(ACT0075)
-    network.add_cell(ACT0078)
+    network.add_cell(ACT0074)
+    network.add_cell(ACT0076)
     network.add_cell(ACT0080)
-    network.add_cell(ACT0082)
-    network.add_cell(ACT0085)
+    network.add_cell(ACT0083)
+    network.add_cell(ACT0087)
     network.add_cell(ACT0089)
-    network.add_cell(CON0092)
-    network.add_cell(ACT0094)
+    network.add_cell(ACT0091)
+    network.add_cell(ACT0093)
     network.add_cell(CON0002)
     network.add_cell(ACT0004)
     network.add_cell(ACT0009)
@@ -484,33 +477,30 @@ def _initialize(owner):
     network.add_cell(ACT0057)
     network.add_cell(ACT0066)
     network.add_cell(ACT0072)
-    network.add_cell(ACT0076)
-    network.add_cell(ACT0079)
-    network.add_cell(ACT0084)
-    network.add_cell(ACT0090)
-    network.add_cell(ACT0096)
+    network.add_cell(ACT0081)
+    network.add_cell(ACT0088)
+    network.add_cell(ACT0092)
     network.add_cell(ACT0003)
     network.add_cell(ACT0013)
     network.add_cell(ACT0027)
     network.add_cell(ACT0035)
     network.add_cell(ACT0042)
     network.add_cell(ACT0054)
-    network.add_cell(ACT0073)
-    network.add_cell(ACT0077)
-    network.add_cell(ACT0086)
-    network.add_cell(ACT0093)
+    network.add_cell(ACT0070)
+    network.add_cell(ACT0085)
+    network.add_cell(ACT0090)
     network.add_cell(ACT0005)
     network.add_cell(ACT0033)
     network.add_cell(ACT0048)
-    network.add_cell(ACT0074)
-    network.add_cell(CON0087)
+    network.add_cell(ACT0075)
+    network.add_cell(ACT0086)
     network.add_cell(ACT0020)
     network.add_cell(CON0061)
-    network.add_cell(ACT0081)
+    network.add_cell(CON0077)
+    network.add_cell(ACT0094)
     network.add_cell(ACT0036)
-    network.add_cell(ACT0070)
+    network.add_cell(ACT0078)
     network.add_cell(ACT0062)
-    network.add_cell(ACT0088)
     owner["IGNLTree_Type"] = network
     network._owner = owner
     network.setup()
