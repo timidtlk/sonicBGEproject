@@ -6,26 +6,19 @@ import math
 
 def _initialize(owner):
     network = nodes.LogicNetwork()
-    ACT0000 = nodes.ActionSetCharacterVelocity()
-    ACT0001 = nodes.ActionApplyForce()
-    CON0002 = nodes.ConditionCollision()
-    ACT0000.local = True
-    ACT0000.condition = CON0002
+    ACT0000 = nodes.ActionApplyForce()
+    CON0001 = nodes.ConditionCollision()
+    ACT0000.local = False
+    ACT0000.condition = CON0001
     ACT0000.game_object = "NLO:CharacterController"
-    ACT0000.vel = mathutils.Vector((0.0, 0.0, 0.0))
-    ACT0000.time = 0.0
-    ACT0001.local = False
-    ACT0001.condition = CON0002
-    ACT0001.game_object = "NLO:CharacterController"
-    ACT0001.force = mathutils.Vector((0.0, 0.0, 4000.0))
-    CON0002.game_object = "NLO:springSensor"
-    CON0002.use_mat = False
-    CON0002.prop = "player"
-    CON0002.material = None
-    CON0002.pulse = False
-    network.add_cell(CON0002)
+    ACT0000.force = mathutils.Vector((0.0, 0.0, 4000.0))
+    CON0001.game_object = "NLO:U_O"
+    CON0001.use_mat = False
+    CON0001.prop = "player"
+    CON0001.material = None
+    CON0001.pulse = False
+    network.add_cell(CON0001)
     network.add_cell(ACT0000)
-    network.add_cell(ACT0001)
     owner["IGNLTree_Spring"] = network
     network._owner = owner
     network.setup()
