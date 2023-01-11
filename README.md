@@ -51,7 +51,7 @@ The project is in WIP, but the features already implemented and the features tha
 
 ## 💻 Requirements
 
-UPBGE 0.3 is really poor optimized and rarely a low-end computer will can run it, so, verify if your computer it is able to:
+UPBGE 0.3 is really poor optimized and rarely a low-end computer will can run it, so verify if your computer it's able to:
 
 ##### Minimum:
 - CPU: Intel Core i5 3470 / AMD FX 6350 or any quad core, 64-bit with SSE2
@@ -62,7 +62,7 @@ UPBGE 0.3 is really poor optimized and rarely a low-end computer will can run it
 
 ## 📝 License
 
-This project is over license GNU-GPL v2.0 . Check the file [LICENSE](LICENSE.md) to more details.
+This project is over license GNU-GPL v2.0 . Check the file [LICENSE](LICENSE.md) for more details.
 
 [⬆ Go back to the top](#nome-do-projeto)<br>
 
