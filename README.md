@@ -26,7 +26,6 @@ The project is in WIP, but the features already implemented and the features tha
  - [x] Sonic Ball Jump
  - [x] Gamepad support
  - [x] Footstep sounds
- - [ ] Advanced Jump System
  - [ ] Death Screen
  - [ ] Water
  - [ ] Spindash
