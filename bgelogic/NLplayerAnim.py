@@ -9,437 +9,570 @@ def _initialize(owner):
     ACT0000 = nodes.ActionApplyRotation()
     CON0001 = nodes.ConditionOnUpdate()
     CON0002 = nodes.ObjectPropertyOperator()
-    CON0003 = nodes.ObjectPropertyOperator()
+    CON0003 = nodes.ConditionAndList()
     CON0004 = nodes.ObjectPropertyOperator()
-    CON0005 = nodes.ConditionAndList()
-    CON0006 = nodes.ObjectPropertyOperator()
-    CON0007 = nodes.ObjectPropertyOperator()
-    CON0008 = nodes.ObjectPropertyOperator()
-    CON0009 = nodes.ConditionAndList()
-    CON0010 = nodes.ObjectPropertyOperator()
-    CON0011 = nodes.ObjectPropertyOperator()
-    CON0012 = nodes.ConditionNot()
-    CON0013 = nodes.ConditionAnd()
-    CON0014 = nodes.ObjectPropertyOperator()
-    CON0015 = nodes.ObjectPropertyOperator()
-    CON0016 = nodes.ObjectPropertyOperator()
-    ACT0017 = nodes.ActionPlayAction()
-    CON0018 = nodes.ConditionAnd()
-    CON0019 = nodes.ObjectPropertyOperator()
-    CON0020 = nodes.ObjectPropertyOperator()
-    CON0021 = nodes.ConditionAndList()
-    CON0022 = nodes.ObjectPropertyOperator()
+    CON0005 = nodes.ObjectPropertyOperator()
+    ACT0006 = nodes.ActionSetGameObjectGameProperty()
+    ACT0007 = nodes.ActionSetGameObjectGameProperty()
+    ACT0008 = nodes.ActionSetGameObjectGameProperty()
+    ACT0009 = nodes.ActionSetGameObjectGameProperty()
+    ACT0010 = nodes.ActionSetGameObjectGameProperty()
+    ACT0011 = nodes.ActionSetGameObjectGameProperty()
+    ACT0012 = nodes.ActionPlayAction()
+    ACT0013 = nodes.ActionSetGameObjectGameProperty()
+    ACT0014 = nodes.ActionSetGameObjectGameProperty()
+    ACT0015 = nodes.ActionPlayAction()
+    CON0016 = nodes.ConditionAnd()
+    CON0017 = nodes.ObjectPropertyOperator()
+    CON0018 = nodes.ObjectPropertyOperator()
+    ACT0019 = nodes.ActionPlayAction()
+    ACT0020 = nodes.ActionSetGameObjectGameProperty()
+    ACT0021 = nodes.ActionSetGameObjectGameProperty()
+    CON0022 = nodes.ConditionAndList()
     CON0023 = nodes.ObjectPropertyOperator()
-    CON0024 = nodes.ConditionAndList()
+    CON0024 = nodes.ObjectPropertyOperator()
     CON0025 = nodes.ObjectPropertyOperator()
     CON0026 = nodes.ObjectPropertyOperator()
-    CON0027 = nodes.ObjectPropertyOperator()
+    ACT0027 = nodes.ActionPlayAction()
     CON0028 = nodes.ObjectPropertyOperator()
-    CON0029 = nodes.ConditionAndList()
+    CON0029 = nodes.ConditionNot()
     CON0030 = nodes.ObjectPropertyOperator()
-    CON0031 = nodes.ConditionOr()
-    CON0032 = nodes.ObjectPropertyOperator()
+    CON0031 = nodes.ConditionAndList()
+    ACT0032 = nodes.ActionPlayAction()
     CON0033 = nodes.ObjectPropertyOperator()
     CON0034 = nodes.ObjectPropertyOperator()
-    ACT0035 = nodes.ActionPlayAction()
-    ACT0036 = nodes.ActionSetGameObjectGameProperty()
-    ACT0037 = nodes.ActionPlayAction()
-    ACT0038 = nodes.ActionSetGameObjectGameProperty()
+    CON0035 = nodes.ObjectPropertyOperator()
+    CON0036 = nodes.ObjectPropertyOperator()
+    CON0037 = nodes.ObjectPropertyOperator()
+    CON0038 = nodes.ConditionAndList()
     ACT0039 = nodes.ActionPlayAction()
-    ACT0040 = nodes.ActionSetGameObjectGameProperty()
+    CON0040 = nodes.ConditionAnd()
     CON0041 = nodes.ObjectPropertyOperator()
     CON0042 = nodes.ObjectPropertyOperator()
     CON0043 = nodes.ObjectPropertyOperator()
-    ACT0044 = nodes.ActionPlayAction()
-    CON0045 = nodes.ObjectPropertyOperator()
-    CON0046 = nodes.ConditionAndList()
-    ACT0047 = nodes.ActionSetGameObjectGameProperty()
-    ACT0048 = nodes.ActionSetGameObjectGameProperty()
+    CON0044 = nodes.ObjectPropertyOperator()
+    CON0045 = nodes.ConditionAndList()
+    ACT0046 = nodes.ActionPlayAction()
+    CON0047 = nodes.ConditionAnd()
+    CON0048 = nodes.ObjectPropertyOperator()
     ACT0049 = nodes.ActionPlayAction()
-    ACT0050 = nodes.ActionSetGameObjectGameProperty()
-    ACT0051 = nodes.ActionPlayAction()
-    ACT0052 = nodes.ActionSetGameObjectGameProperty()
-    ACT0053 = nodes.ActionSetGameObjectGameProperty()
-    ACT0054 = nodes.ActionPlayAction()
-    ACT0055 = nodes.ActionSetGameObjectGameProperty()
-    ACT0056 = nodes.ActionSetGameObjectGameProperty()
-    ACT0057 = nodes.ActionSetGameObjectGameProperty()
-    ACT0058 = nodes.ActionPlayAction()
+    CON0050 = nodes.ConditionAndList()
+    CON0051 = nodes.ObjectPropertyOperator()
+    CON0052 = nodes.ConditionAnd()
+    ACT0053 = nodes.ActionPlayAction()
+    CON0054 = nodes.ObjectPropertyOperator()
+    CON0055 = nodes.ObjectPropertyOperator()
+    CON0056 = nodes.ObjectPropertyOperator()
+    CON0057 = nodes.ObjectPropertyOperator()
+    CON0058 = nodes.ConditionAnd()
+    CON0059 = nodes.ObjectPropertyOperator()
+    ACT0060 = nodes.ActionPlayAction()
+    CON0061 = nodes.ConditionAndList()
+    CON0062 = nodes.ConditionNot()
+    CON0063 = nodes.ObjectPropertyOperator()
+    CON0064 = nodes.ConditionAnd()
+    ACT0065 = nodes.ActionPlayAction()
+    CON0066 = nodes.ObjectPropertyOperator()
+    CON0067 = nodes.ObjectPropertyOperator()
+    CON0068 = nodes.ObjectPropertyOperator()
+    CON0069 = nodes.ObjectPropertyOperator()
+    CON0070 = nodes.ConditionOr()
+    CON0071 = nodes.ObjectPropertyOperator()
+    CON0072 = nodes.ConditionAndList()
+    CON0073 = nodes.ConditionAndList()
+    CON0074 = nodes.ObjectPropertyOperator()
+    CON0075 = nodes.ObjectPropertyOperator()
+    CON0076 = nodes.ObjectPropertyOperator()
+    ACT0077 = nodes.ActionSetGameObjectGameProperty()
+    ACT0078 = nodes.ActionSetGameObjectGameProperty()
     ACT0000.local = True
     ACT0000.condition = CON0001
     ACT0000.game_object = "NLO:SonicBall"
     ACT0000.rotation = mathutils.Vector((0.5235987901687622, 0.0, 0.0))
     CON0002.game_object = "NLO:CharacterController"
-    CON0002.property_name = "Speed"
-    CON0002.compare_value = 0.30000001192092896
-    CON0002.operator = 2
-    CON0003.game_object = "NLO:CharacterController"
-    CON0003.property_name = "Speed"
-    CON0003.compare_value = 0.699999988079071
-    CON0003.operator = 5
+    CON0002.property_name = "isBoosting"
+    CON0002.compare_value = True
+    CON0002.operator = 0
+    CON0003.ca = CON0005
+    CON0003.cb = CON0004
+    CON0003.cc = CON0062
+    CON0003.cd = True
+    CON0003.ce = True
+    CON0003.cf = True
     CON0004.game_object = "NLO:CharacterController"
-    CON0004.property_name = "isFalling"
+    CON0004.property_name = "isBoosting"
     CON0004.compare_value = False
     CON0004.operator = 0
-    CON0005.ca = CON0003
-    CON0005.cb = CON0002
-    CON0005.cc = CON0004
-    CON0005.cd = CON0010
-    CON0005.ce = CON0012
-    CON0005.cf = True
-    CON0006.game_object = "NLO:CharacterController"
-    CON0006.property_name = "Speed"
-    CON0006.compare_value = 0.699999988079071
-    CON0006.operator = 2
-    CON0007.game_object = "NLO:CharacterController"
-    CON0007.property_name = "isFalling"
-    CON0007.compare_value = False
-    CON0007.operator = 0
-    CON0008.game_object = "NLO:CharacterController"
-    CON0008.property_name = "isStomping"
-    CON0008.compare_value = False
-    CON0008.operator = 0
-    CON0009.ca = True
-    CON0009.cb = CON0006
-    CON0009.cc = CON0007
-    CON0009.cd = CON0008
-    CON0009.ce = CON0012
-    CON0009.cf = True
-    CON0010.game_object = "NLO:CharacterController"
-    CON0010.property_name = "isStomping"
-    CON0010.compare_value = False
-    CON0010.operator = 0
-    CON0011.game_object = "NLO:CharacterController"
-    CON0011.property_name = "idle"
-    CON0011.compare_value = 10.0
-    CON0011.operator = 4
-    CON0012.condition = CON0014
-    CON0013.condition_a = CON0014
-    CON0013.condition_b = CON0015
-    CON0014.game_object = "NLO:CharacterController"
-    CON0014.property_name = "isBoosting"
-    CON0014.compare_value = True
-    CON0014.operator = 0
-    CON0015.game_object = "NLO:CharacterController"
-    CON0015.property_name = "isFalling"
-    CON0015.compare_value = False
-    CON0015.operator = 0
-    CON0016.game_object = "NLO:CharacterController"
-    CON0016.property_name = "isFalling"
-    CON0016.compare_value = True
-    CON0016.operator = 0
-    ACT0017.condition = CON0018
-    ACT0017.game_object = "NLO:chr_Sonic_HD"
-    ACT0017.action_name = "AirBoost"
-    ACT0017.start_frame = 1.0
-    ACT0017.end_frame = 9.0
-    ACT0017.layer = 0
-    ACT0017.priority = 40
-    ACT0017.play_mode = bge.logic.KX_ACTION_MODE_LOOP + 3
-    ACT0017.stop = True
-    ACT0017.layer_weight = 1.0
-    ACT0017.speed = 1.0
-    ACT0017.blendin = 7.0
-    ACT0017.blend_mode = bge.logic.KX_ACTION_BLEND_BLEND
-    CON0018.condition_a = CON0019
-    CON0018.condition_b = CON0020
-    CON0019.game_object = "NLO:CharacterController"
-    CON0019.property_name = "isFalling"
-    CON0019.compare_value = True
-    CON0019.operator = 0
-    CON0020.game_object = "NLO:CharacterController"
-    CON0020.property_name = "isBoosting"
-    CON0020.compare_value = True
-    CON0020.operator = 0
-    CON0021.ca = CON0025
-    CON0021.cb = CON0022
-    CON0021.cc = True
-    CON0021.cd = True
-    CON0021.ce = True
-    CON0021.cf = True
-    CON0022.game_object = "NLO:CharacterController"
-    CON0022.property_name = "isBoosting"
-    CON0022.compare_value = False
-    CON0022.operator = 0
+    CON0005.game_object = "NLO:CharacterController"
+    CON0005.property_name = "isStomping"
+    CON0005.compare_value = True
+    CON0005.operator = 0
+    ACT0006.condition = ACT0065.RUNNING
+    ACT0006.game_object = "NLO:CharacterController"
+    ACT0006.property_name = "animation"
+    ACT0006.property_value = "idle"
+    ACT0007.condition = ACT0032.RUNNING
+    ACT0007.game_object = "NLO:CharacterController"
+    ACT0007.property_name = "animation"
+    ACT0007.property_value = "idle"
+    ACT0008.condition = ACT0046.RUNNING
+    ACT0008.game_object = "NLO:CharacterController"
+    ACT0008.property_name = "animation"
+    ACT0008.property_value = "jog"
+    ACT0009.condition = ACT0039.RUNNING
+    ACT0009.game_object = "NLO:CharacterController"
+    ACT0009.property_name = "animation"
+    ACT0009.property_value = "walk"
+    ACT0010.condition = None
+    ACT0010.game_object = "NLO:CharacterController"
+    ACT0010.property_name = "animation"
+    ACT0010.property_value = "walk"
+    ACT0011.condition = ACT0060.RUNNING
+    ACT0011.game_object = "NLO:CharacterController"
+    ACT0011.property_name = "animation"
+    ACT0011.property_value = "jet"
+    ACT0012.condition = CON0050
+    ACT0012.game_object = "NLO:chr_Sonic_HD"
+    ACT0012.action_name = "Boost"
+    ACT0012.start_frame = 1.0
+    ACT0012.end_frame = 34.0
+    ACT0012.layer = 1
+    ACT0012.priority = 2
+    ACT0012.play_mode = bge.logic.KX_ACTION_MODE_LOOP + 3
+    ACT0012.stop = True
+    ACT0012.layer_weight = 1.0
+    ACT0012.speed = 4.0
+    ACT0012.blendin = 4.0
+    ACT0012.blend_mode = bge.logic.KX_ACTION_BLEND_BLEND
+    ACT0013.condition = ACT0012.RUNNING
+    ACT0013.game_object = "NLO:CharacterController"
+    ACT0013.property_name = "animation"
+    ACT0013.property_value = "boost"
+    ACT0014.condition = ACT0049.RUNNING
+    ACT0014.game_object = "NLO:CharacterController"
+    ACT0014.property_name = "animation"
+    ACT0014.property_value = "null"
+    ACT0015.condition = CON0003
+    ACT0015.game_object = "NLO:chr_Sonic_HD"
+    ACT0015.action_name = "Stomp"
+    ACT0015.start_frame = 1.0
+    ACT0015.end_frame = 6.0
+    ACT0015.layer = 0
+    ACT0015.priority = 39
+    ACT0015.play_mode = bge.logic.KX_ACTION_MODE_LOOP + 3
+    ACT0015.stop = False
+    ACT0015.layer_weight = 1.0
+    ACT0015.speed = 1.0
+    ACT0015.blendin = 2.0
+    ACT0015.blend_mode = bge.logic.KX_ACTION_BLEND_ADD
+    CON0016.condition_a = CON0048
+    CON0016.condition_b = CON0002
+    CON0017.game_object = "NLO:CharacterController"
+    CON0017.property_name = "isStomping"
+    CON0017.compare_value = False
+    CON0017.operator = 0
+    CON0018.game_object = "NLO:CharacterController"
+    CON0018.property_name = "isBoosting"
+    CON0018.compare_value = False
+    CON0018.operator = 0
+    ACT0019.condition = CON0031
+    ACT0019.game_object = "NLO:chr_Sonic_HD"
+    ACT0019.action_name = "JumpArc"
+    ACT0019.start_frame = 1.0
+    ACT0019.end_frame = 6.0
+    ACT0019.layer = 0
+    ACT0019.priority = 40
+    ACT0019.play_mode = bge.logic.KX_ACTION_MODE_LOOP + 3
+    ACT0019.stop = False
+    ACT0019.layer_weight = 1.0
+    ACT0019.speed = 1.0
+    ACT0019.blendin = 7.0
+    ACT0019.blend_mode = bge.logic.KX_ACTION_BLEND_BLEND
+    ACT0020.condition = ACT0019.RUNNING
+    ACT0020.game_object = "NLO:CharacterController"
+    ACT0020.property_name = "animation"
+    ACT0020.property_value = "null"
+    ACT0021.condition = ACT0027.RUNNING
+    ACT0021.game_object = "NLO:CharacterController"
+    ACT0021.property_name = "animation"
+    ACT0021.property_value = "null"
+    CON0022.ca = CON0030
+    CON0022.cb = CON0024
+    CON0022.cc = CON0023
+    CON0022.cd = CON0025
+    CON0022.ce = True
+    CON0022.cf = True
     CON0023.game_object = "NLO:CharacterController"
     CON0023.property_name = "isBoosting"
     CON0023.compare_value = False
     CON0023.operator = 0
-    CON0024.ca = CON0016
-    CON0024.cb = CON0023
-    CON0024.cc = CON0026
-    CON0024.cd = True
-    CON0024.ce = True
-    CON0024.cf = True
+    CON0024.game_object = "NLO:CharacterController"
+    CON0024.property_name = "isFalling"
+    CON0024.compare_value = False
+    CON0024.operator = 0
     CON0025.game_object = "NLO:CharacterController"
     CON0025.property_name = "isStomping"
-    CON0025.compare_value = True
+    CON0025.compare_value = False
     CON0025.operator = 0
     CON0026.game_object = "NLO:CharacterController"
-    CON0026.property_name = "isStomping"
-    CON0026.compare_value = False
+    CON0026.property_name = "isFalling"
+    CON0026.compare_value = True
     CON0026.operator = 0
-    CON0027.game_object = "NLO:CharacterController"
-    CON0027.property_name = "idle"
-    CON0027.compare_value = 10.0
-    CON0027.operator = 5
+    ACT0027.condition = CON0022
+    ACT0027.game_object = "NLO:chr_Sonic_HD"
+    ACT0027.action_name = "SpringJump"
+    ACT0027.start_frame = 1.0
+    ACT0027.end_frame = 9.25
+    ACT0027.layer = 0
+    ACT0027.priority = 13
+    ACT0027.play_mode = bge.logic.KX_ACTION_MODE_LOOP + 3
+    ACT0027.stop = False
+    ACT0027.layer_weight = 1.0
+    ACT0027.speed = 1.0
+    ACT0027.blendin = 7.0
+    ACT0027.blend_mode = bge.logic.KX_ACTION_BLEND_ADD
     CON0028.game_object = "NLO:CharacterController"
-    CON0028.property_name = "idle"
-    CON0028.compare_value = 16.0
-    CON0028.operator = 2
-    CON0029.ca = CON0030
-    CON0029.cb = CON0027
-    CON0029.cc = CON0012
-    CON0029.cd = CON0034
-    CON0029.ce = CON0033
-    CON0029.cf = CON0032
+    CON0028.property_name = "isSpringing"
+    CON0028.compare_value = False
+    CON0028.operator = 0
+    CON0029.condition = CON0055
     CON0030.game_object = "NLO:CharacterController"
-    CON0030.property_name = "Speed"
-    CON0030.compare_value = 0.029999999329447746
-    CON0030.operator = 5
-    CON0031.condition_a = CON0029
-    CON0031.condition_b = CON0028
-    CON0032.game_object = "NLO:CharacterController"
-    CON0032.property_name = "isFalling"
-    CON0032.compare_value = False
-    CON0032.operator = 5
+    CON0030.property_name = "isSpringing"
+    CON0030.compare_value = True
+    CON0030.operator = 0
+    CON0031.ca = CON0026
+    CON0031.cb = CON0018
+    CON0031.cc = CON0017
+    CON0031.cd = CON0028
+    CON0031.ce = CON0062
+    CON0031.cf = True
+    ACT0032.condition = CON0052
+    ACT0032.game_object = "NLO:chr_Sonic_HD"
+    ACT0032.action_name = "Idle00"
+    ACT0032.start_frame = 1.0
+    ACT0032.end_frame = 155.1600341796875
+    ACT0032.layer = 0
+    ACT0032.priority = 70
+    ACT0032.play_mode = bge.logic.KX_ACTION_MODE_PLAY
+    ACT0032.stop = False
+    ACT0032.layer_weight = 1.0
+    ACT0032.speed = 1.0
+    ACT0032.blendin = 4.0
+    ACT0032.blend_mode = bge.logic.KX_ACTION_BLEND_BLEND
     CON0033.game_object = "NLO:CharacterController"
-    CON0033.property_name = "isFalling"
-    CON0033.compare_value = False
-    CON0033.operator = 5
+    CON0033.property_name = "idle"
+    CON0033.compare_value = 10.0
+    CON0033.operator = 4
     CON0034.game_object = "NLO:CharacterController"
-    CON0034.property_name = "isJumping"
-    CON0034.compare_value = False
+    CON0034.property_name = "Speed"
+    CON0034.compare_value = 0.30000001192092896
     CON0034.operator = 5
-    ACT0035.condition = CON0031
-    ACT0035.game_object = "NLO:U_O"
-    ACT0035.action_name = "Idle"
-    ACT0035.start_frame = 1.0
-    ACT0035.end_frame = 68.0
-    ACT0035.layer = 0
-    ACT0035.priority = 90
-    ACT0035.play_mode = bge.logic.KX_ACTION_MODE_LOOP + 3
-    ACT0035.stop = False
-    ACT0035.layer_weight = 1.0
-    ACT0035.speed = 1.0
-    ACT0035.blendin = 4.0
-    ACT0035.blend_mode = bge.logic.KX_ACTION_BLEND_BLEND
-    ACT0036.condition = ACT0035.RUNNING
-    ACT0036.game_object = "NLO:CharacterController"
-    ACT0036.property_name = "animation"
-    ACT0036.property_value = "idle"
-    ACT0037.condition = CON0011
-    ACT0037.game_object = "NLO:chr_Sonic_HD"
-    ACT0037.action_name = "Idle00"
-    ACT0037.start_frame = 1.0
-    ACT0037.end_frame = 155.1600341796875
-    ACT0037.layer = 0
-    ACT0037.priority = 70
-    ACT0037.play_mode = bge.logic.KX_ACTION_MODE_PLAY
-    ACT0037.stop = False
-    ACT0037.layer_weight = 1.0
-    ACT0037.speed = 1.0
-    ACT0037.blendin = 4.0
-    ACT0037.blend_mode = bge.logic.KX_ACTION_BLEND_BLEND
-    ACT0038.condition = ACT0037.RUNNING
-    ACT0038.game_object = "NLO:CharacterController"
-    ACT0038.property_name = "animation"
-    ACT0038.property_value = "idle"
-    ACT0039.condition = CON0005
+    CON0035.game_object = "NLO:CharacterController"
+    CON0035.property_name = "Speed"
+    CON0035.compare_value = 0.029999999329447746
+    CON0035.operator = 2
+    CON0036.game_object = "NLO:CharacterController"
+    CON0036.property_name = "isFalling"
+    CON0036.compare_value = False
+    CON0036.operator = 0
+    CON0037.game_object = "NLO:CharacterController"
+    CON0037.property_name = "isStomping"
+    CON0037.compare_value = False
+    CON0037.operator = 0
+    CON0038.ca = CON0034
+    CON0038.cb = CON0035
+    CON0038.cc = CON0036
+    CON0038.cd = CON0037
+    CON0038.ce = CON0029
+    CON0038.cf = CON0062
+    ACT0039.condition = CON0040
     ACT0039.game_object = "NLO:U_O"
-    ACT0039.action_name = "Jog"
+    ACT0039.action_name = "Walk"
     ACT0039.start_frame = 1.0
     ACT0039.end_frame = 34.0
     ACT0039.layer = 0
-    ACT0039.priority = 8
+    ACT0039.priority = 10
     ACT0039.play_mode = bge.logic.KX_ACTION_MODE_LOOP + 3
     ACT0039.stop = False
     ACT0039.layer_weight = 1.0
-    ACT0039.speed = 3.0
-    ACT0039.blendin = 2.0
+    ACT0039.speed = 2.0
+    ACT0039.blendin = 4.0
     ACT0039.blend_mode = bge.logic.KX_ACTION_BLEND_BLEND
-    ACT0040.condition = ACT0039.RUNNING
-    ACT0040.game_object = "NLO:CharacterController"
-    ACT0040.property_name = "animation"
-    ACT0040.property_value = "jog"
+    CON0040.condition_a = CON0038
+    CON0040.condition_b = CON0076
     CON0041.game_object = "NLO:CharacterController"
     CON0041.property_name = "Speed"
     CON0041.compare_value = 0.30000001192092896
-    CON0041.operator = 5
+    CON0041.operator = 2
     CON0042.game_object = "NLO:CharacterController"
     CON0042.property_name = "Speed"
-    CON0042.compare_value = 0.029999999329447746
-    CON0042.operator = 2
+    CON0042.compare_value = 0.699999988079071
+    CON0042.operator = 5
     CON0043.game_object = "NLO:CharacterController"
-    CON0043.property_name = "isFalling"
+    CON0043.property_name = "isStomping"
     CON0043.compare_value = False
     CON0043.operator = 0
-    ACT0044.condition = CON0046
-    ACT0044.game_object = "NLO:U_O"
-    ACT0044.action_name = "Walk"
-    ACT0044.start_frame = 1.0
-    ACT0044.end_frame = 34.0
-    ACT0044.layer = 0
-    ACT0044.priority = 10
-    ACT0044.play_mode = bge.logic.KX_ACTION_MODE_LOOP + 3
-    ACT0044.stop = False
-    ACT0044.layer_weight = 1.0
-    ACT0044.speed = 2.0
-    ACT0044.blendin = 4.0
-    ACT0044.blend_mode = bge.logic.KX_ACTION_BLEND_BLEND
-    CON0045.game_object = "NLO:CharacterController"
-    CON0045.property_name = "isStomping"
-    CON0045.compare_value = False
-    CON0045.operator = 0
-    CON0046.ca = CON0041
-    CON0046.cb = CON0042
-    CON0046.cc = CON0043
-    CON0046.cd = CON0045
-    CON0046.ce = CON0012
-    CON0046.cf = True
-    ACT0047.condition = ACT0044.RUNNING
-    ACT0047.game_object = "NLO:CharacterController"
-    ACT0047.property_name = "animation"
-    ACT0047.property_value = "walk"
-    ACT0048.condition = None
-    ACT0048.game_object = "NLO:CharacterController"
-    ACT0048.property_name = "animation"
-    ACT0048.property_value = "walk"
-    ACT0049.condition = CON0009
-    ACT0049.game_object = "NLO:U_O"
-    ACT0049.action_name = "Jet"
+    CON0044.game_object = "NLO:CharacterController"
+    CON0044.property_name = "isFalling"
+    CON0044.compare_value = False
+    CON0044.operator = 0
+    CON0045.ca = CON0042
+    CON0045.cb = CON0041
+    CON0045.cc = CON0044
+    CON0045.cd = CON0043
+    CON0045.ce = CON0029
+    CON0045.cf = CON0028
+    ACT0046.condition = CON0047
+    ACT0046.game_object = "NLO:U_O"
+    ACT0046.action_name = "Jog"
+    ACT0046.start_frame = 1.0
+    ACT0046.end_frame = 34.0
+    ACT0046.layer = 0
+    ACT0046.priority = 8
+    ACT0046.play_mode = bge.logic.KX_ACTION_MODE_LOOP + 3
+    ACT0046.stop = False
+    ACT0046.layer_weight = 1.0
+    ACT0046.speed = 3.0
+    ACT0046.blendin = 2.0
+    ACT0046.blend_mode = bge.logic.KX_ACTION_BLEND_BLEND
+    CON0047.condition_a = CON0045
+    CON0047.condition_b = CON0076
+    CON0048.game_object = "NLO:CharacterController"
+    CON0048.property_name = "isFalling"
+    CON0048.compare_value = True
+    CON0048.operator = 0
+    ACT0049.condition = CON0016
+    ACT0049.game_object = "NLO:chr_Sonic_HD"
+    ACT0049.action_name = "AirBoost"
     ACT0049.start_frame = 1.0
-    ACT0049.end_frame = 34.0
+    ACT0049.end_frame = 9.0
     ACT0049.layer = 0
-    ACT0049.priority = 4
+    ACT0049.priority = 40
     ACT0049.play_mode = bge.logic.KX_ACTION_MODE_LOOP + 3
-    ACT0049.stop = False
+    ACT0049.stop = True
     ACT0049.layer_weight = 1.0
-    ACT0049.speed = 4.0
-    ACT0049.blendin = 2.0
+    ACT0049.speed = 1.0
+    ACT0049.blendin = 7.0
     ACT0049.blend_mode = bge.logic.KX_ACTION_BLEND_BLEND
-    ACT0050.condition = ACT0049.RUNNING
-    ACT0050.game_object = "NLO:CharacterController"
-    ACT0050.property_name = "animation"
-    ACT0050.property_value = "jet"
-    ACT0051.condition = CON0013
-    ACT0051.game_object = "NLO:chr_Sonic_HD"
-    ACT0051.action_name = "Boost"
-    ACT0051.start_frame = 1.0
-    ACT0051.end_frame = 34.0
-    ACT0051.layer = 1
-    ACT0051.priority = 2
-    ACT0051.play_mode = bge.logic.KX_ACTION_MODE_LOOP + 3
-    ACT0051.stop = True
-    ACT0051.layer_weight = 1.0
-    ACT0051.speed = 4.0
-    ACT0051.blendin = 4.0
-    ACT0051.blend_mode = bge.logic.KX_ACTION_BLEND_BLEND
-    ACT0052.condition = ACT0051.RUNNING
-    ACT0052.game_object = "NLO:CharacterController"
-    ACT0052.property_name = "animation"
-    ACT0052.property_value = "boost"
-    ACT0053.condition = ACT0017.RUNNING
-    ACT0053.game_object = "NLO:CharacterController"
-    ACT0053.property_name = "animation"
-    ACT0053.property_value = "null"
-    ACT0054.condition = CON0021
-    ACT0054.game_object = "NLO:chr_Sonic_HD"
-    ACT0054.action_name = "Stomp"
-    ACT0054.start_frame = 1.0
-    ACT0054.end_frame = 6.0
-    ACT0054.layer = 0
-    ACT0054.priority = 39
-    ACT0054.play_mode = bge.logic.KX_ACTION_MODE_LOOP + 3
-    ACT0054.stop = False
-    ACT0054.layer_weight = 1.0
-    ACT0054.speed = 1.0
-    ACT0054.blendin = 2.0
-    ACT0054.blend_mode = bge.logic.KX_ACTION_BLEND_ADD
-    ACT0055.condition = ACT0054.RUNNING
-    ACT0055.game_object = "NLO:CharacterController"
-    ACT0055.property_name = "animation"
-    ACT0055.property_value = "null"
-    ACT0056.condition = ACT0058.RUNNING
-    ACT0056.game_object = "NLO:CharacterController"
-    ACT0056.property_name = "animation"
-    ACT0056.property_value = "null"
-    ACT0057.condition = None
-    ACT0057.game_object = "NLO:CharacterController"
-    ACT0057.property_name = "animation"
-    ACT0057.property_value = "null"
-    ACT0058.condition = CON0024
-    ACT0058.game_object = "NLO:chr_Sonic_HD"
-    ACT0058.action_name = "JumpArc"
-    ACT0058.start_frame = 1.0
-    ACT0058.end_frame = 6.0
-    ACT0058.layer = 0
-    ACT0058.priority = 40
-    ACT0058.play_mode = bge.logic.KX_ACTION_MODE_LOOP + 3
-    ACT0058.stop = False
-    ACT0058.layer_weight = 1.0
-    ACT0058.speed = 1.0
-    ACT0058.blendin = 7.0
-    ACT0058.blend_mode = bge.logic.KX_ACTION_BLEND_BLEND
+    CON0050.ca = CON0055
+    CON0050.cb = CON0051
+    CON0050.cc = CON0054
+    CON0050.cd = True
+    CON0050.ce = True
+    CON0050.cf = True
+    CON0051.game_object = "NLO:CharacterController"
+    CON0051.property_name = "isFalling"
+    CON0051.compare_value = False
+    CON0051.operator = 0
+    CON0052.condition_a = CON0033
+    CON0052.condition_b = CON0076
+    ACT0053.condition = CON0058
+    ACT0053.game_object = "NLO:chr_Sonic_HD"
+    ACT0053.action_name = "Sliding"
+    ACT0053.start_frame = 1.0
+    ACT0053.end_frame = 6.050000190734863
+    ACT0053.layer = 0
+    ACT0053.priority = 69
+    ACT0053.play_mode = bge.logic.KX_ACTION_MODE_LOOP + 3
+    ACT0053.stop = False
+    ACT0053.layer_weight = 1.0
+    ACT0053.speed = 0.5
+    ACT0053.blendin = 5.0
+    ACT0053.blend_mode = bge.logic.KX_ACTION_BLEND_ADD
+    CON0054.game_object = "NLO:CharacterController"
+    CON0054.property_name = "isSliding"
+    CON0054.compare_value = False
+    CON0054.operator = 0
+    CON0055.game_object = "NLO:CharacterController"
+    CON0055.property_name = "isBoosting"
+    CON0055.compare_value = True
+    CON0055.operator = 0
+    CON0056.game_object = "NLO:CharacterController"
+    CON0056.property_name = "isSliding"
+    CON0056.compare_value = True
+    CON0056.operator = 0
+    CON0057.game_object = "NLO:CharacterController"
+    CON0057.property_name = "isBoosting"
+    CON0057.compare_value = False
+    CON0057.operator = 0
+    CON0058.condition_a = CON0056
+    CON0058.condition_b = CON0057
+    CON0059.game_object = "NLO:CharacterController"
+    CON0059.property_name = "isFalling"
+    CON0059.compare_value = False
+    CON0059.operator = 0
+    ACT0060.condition = CON0073
+    ACT0060.game_object = "NLO:U_O"
+    ACT0060.action_name = "Jet"
+    ACT0060.start_frame = 1.0
+    ACT0060.end_frame = 34.0
+    ACT0060.layer = 0
+    ACT0060.priority = 4
+    ACT0060.play_mode = bge.logic.KX_ACTION_MODE_LOOP + 3
+    ACT0060.stop = False
+    ACT0060.layer_weight = 1.0
+    ACT0060.speed = 4.0
+    ACT0060.blendin = 2.0
+    ACT0060.blend_mode = bge.logic.KX_ACTION_BLEND_BLEND
+    CON0061.ca = True
+    CON0061.cb = CON0063
+    CON0061.cc = CON0059
+    CON0061.cd = CON0075
+    CON0061.ce = CON0029
+    CON0061.cf = CON0062
+    CON0062.condition = CON0030
+    CON0063.game_object = "NLO:CharacterController"
+    CON0063.property_name = "Speed"
+    CON0063.compare_value = 0.699999988079071
+    CON0063.operator = 2
+    CON0064.condition_a = CON0070
+    CON0064.condition_b = CON0076
+    ACT0065.condition = CON0064
+    ACT0065.game_object = "NLO:U_O"
+    ACT0065.action_name = "Idle"
+    ACT0065.start_frame = 1.0
+    ACT0065.end_frame = 68.0
+    ACT0065.layer = 0
+    ACT0065.priority = 90
+    ACT0065.play_mode = bge.logic.KX_ACTION_MODE_LOOP + 3
+    ACT0065.stop = False
+    ACT0065.layer_weight = 1.0
+    ACT0065.speed = 1.0
+    ACT0065.blendin = 4.0
+    ACT0065.blend_mode = bge.logic.KX_ACTION_BLEND_BLEND
+    CON0066.game_object = "NLO:CharacterController"
+    CON0066.property_name = "idle"
+    CON0066.compare_value = 16.0
+    CON0066.operator = 2
+    CON0067.game_object = "NLO:CharacterController"
+    CON0067.property_name = "idle"
+    CON0067.compare_value = 10.0
+    CON0067.operator = 5
+    CON0068.game_object = "NLO:CharacterController"
+    CON0068.property_name = "isFalling"
+    CON0068.compare_value = False
+    CON0068.operator = 5
+    CON0069.game_object = "NLO:CharacterController"
+    CON0069.property_name = "isJumping"
+    CON0069.compare_value = False
+    CON0069.operator = 5
+    CON0070.condition_a = CON0072
+    CON0070.condition_b = CON0066
+    CON0071.game_object = "NLO:CharacterController"
+    CON0071.property_name = "Speed"
+    CON0071.compare_value = 0.029999999329447746
+    CON0071.operator = 5
+    CON0072.ca = CON0071
+    CON0072.cb = CON0067
+    CON0072.cc = CON0029
+    CON0072.cd = CON0069
+    CON0072.ce = CON0068
+    CON0072.cf = CON0062
+    CON0073.ca = CON0061
+    CON0073.cb = CON0062
+    CON0073.cc = CON0074
+    CON0073.cd = CON0076
+    CON0073.ce = True
+    CON0073.cf = True
+    CON0074.game_object = "NLO:CharacterController"
+    CON0074.property_name = "isBoosting"
+    CON0074.compare_value = False
+    CON0074.operator = 0
+    CON0075.game_object = "NLO:CharacterController"
+    CON0075.property_name = "isStomping"
+    CON0075.compare_value = False
+    CON0075.operator = 0
+    CON0076.game_object = "NLO:CharacterController"
+    CON0076.property_name = "isSliding"
+    CON0076.compare_value = False
+    CON0076.operator = 0
+    ACT0077.condition = ACT0015.RUNNING
+    ACT0077.game_object = "NLO:CharacterController"
+    ACT0077.property_name = "animation"
+    ACT0077.property_value = "null"
+    ACT0078.condition = ACT0053.RUNNING
+    ACT0078.game_object = "NLO:CharacterController"
+    ACT0078.property_name = "animation"
+    ACT0078.property_value = "sliding"
     network.add_cell(CON0001)
-    network.add_cell(CON0003)
-    network.add_cell(CON0006)
-    network.add_cell(CON0008)
-    network.add_cell(CON0010)
-    network.add_cell(CON0014)
-    network.add_cell(CON0016)
-    network.add_cell(CON0019)
-    network.add_cell(CON0022)
+    network.add_cell(CON0004)
+    network.add_cell(ACT0010)
+    network.add_cell(CON0017)
+    network.add_cell(CON0023)
     network.add_cell(CON0025)
-    network.add_cell(CON0027)
+    network.add_cell(CON0028)
     network.add_cell(CON0030)
-    network.add_cell(CON0032)
-    network.add_cell(CON0034)
+    network.add_cell(CON0033)
+    network.add_cell(CON0035)
+    network.add_cell(CON0037)
     network.add_cell(CON0041)
     network.add_cell(CON0043)
-    network.add_cell(CON0045)
-    network.add_cell(ACT0048)
-    network.add_cell(ACT0057)
+    network.add_cell(CON0048)
+    network.add_cell(CON0051)
+    network.add_cell(CON0054)
+    network.add_cell(CON0056)
+    network.add_cell(CON0059)
+    network.add_cell(CON0062)
+    network.add_cell(CON0066)
+    network.add_cell(CON0068)
+    network.add_cell(CON0071)
+    network.add_cell(CON0074)
+    network.add_cell(CON0076)
     network.add_cell(ACT0000)
-    network.add_cell(CON0004)
-    network.add_cell(CON0007)
-    network.add_cell(CON0011)
-    network.add_cell(CON0015)
-    network.add_cell(CON0020)
-    network.add_cell(CON0023)
-    network.add_cell(CON0026)
-    network.add_cell(CON0033)
-    network.add_cell(ACT0037)
-    network.add_cell(CON0042)
-    network.add_cell(CON0002)
-    network.add_cell(CON0012)
+    network.add_cell(CON0005)
     network.add_cell(CON0018)
     network.add_cell(CON0024)
-    network.add_cell(CON0029)
-    network.add_cell(ACT0038)
-    network.add_cell(CON0046)
-    network.add_cell(ACT0058)
-    network.add_cell(CON0005)
-    network.add_cell(CON0013)
-    network.add_cell(CON0021)
-    network.add_cell(ACT0039)
-    network.add_cell(ACT0044)
-    network.add_cell(ACT0051)
-    network.add_cell(ACT0054)
-    network.add_cell(ACT0056)
-    network.add_cell(CON0009)
-    network.add_cell(CON0028)
-    network.add_cell(ACT0040)
+    network.add_cell(CON0034)
+    network.add_cell(CON0042)
+    network.add_cell(CON0052)
+    network.add_cell(CON0055)
+    network.add_cell(CON0063)
+    network.add_cell(CON0067)
+    network.add_cell(CON0075)
+    network.add_cell(CON0002)
+    network.add_cell(CON0016)
+    network.add_cell(CON0022)
+    network.add_cell(ACT0027)
+    network.add_cell(ACT0032)
+    network.add_cell(CON0044)
     network.add_cell(ACT0049)
-    network.add_cell(ACT0052)
-    network.add_cell(ACT0055)
-    network.add_cell(ACT0017)
-    network.add_cell(ACT0047)
-    network.add_cell(ACT0053)
+    network.add_cell(CON0057)
+    network.add_cell(CON0069)
+    network.add_cell(CON0003)
+    network.add_cell(ACT0007)
+    network.add_cell(ACT0014)
+    network.add_cell(ACT0021)
+    network.add_cell(CON0029)
+    network.add_cell(CON0036)
+    network.add_cell(CON0045)
+    network.add_cell(CON0047)
+    network.add_cell(CON0058)
+    network.add_cell(CON0061)
+    network.add_cell(CON0072)
+    network.add_cell(ACT0015)
+    network.add_cell(CON0026)
+    network.add_cell(CON0038)
+    network.add_cell(CON0040)
+    network.add_cell(CON0050)
+    network.add_cell(CON0070)
+    network.add_cell(ACT0077)
+    network.add_cell(ACT0012)
     network.add_cell(CON0031)
-    network.add_cell(ACT0050)
-    network.add_cell(ACT0035)
-    network.add_cell(ACT0036)
+    network.add_cell(ACT0046)
+    network.add_cell(CON0064)
+    network.add_cell(CON0073)
+    network.add_cell(ACT0008)
+    network.add_cell(ACT0013)
+    network.add_cell(ACT0039)
+    network.add_cell(ACT0060)
+    network.add_cell(ACT0009)
+    network.add_cell(ACT0019)
+    network.add_cell(ACT0053)
+    network.add_cell(ACT0078)
+    network.add_cell(ACT0011)
+    network.add_cell(ACT0065)
+    network.add_cell(ACT0006)
+    network.add_cell(ACT0020)
     owner["IGNLTree_playerAnim"] = network
     network._owner = owner
     network.setup()

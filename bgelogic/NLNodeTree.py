@@ -6,6 +6,26 @@ import math
 
 def _initialize(owner):
     network = nodes.LogicNetwork()
+    ACT0000 = nodes.ActionAddToGameObjectGameProperty()
+    ACT0001 = nodes.ActionSetMaterialNodeValue()
+    PAR0002 = nodes.ParameterObjectProperty()
+    CON0003 = nodes.ConditionOnUpdate()
+    ACT0000.operator = nodes.ActionAddToGameObjectGameProperty.op_by_code("SUB")
+    ACT0000.condition = CON0003
+    ACT0000.game_object = "NLO:U_O"
+    ACT0000.property_name = "alpha_homming"
+    ACT0000.property_value = 0.019999999552965164
+    ACT0001.condition = CON0003
+    ACT0001.mat_name = "mat_homming_eff"
+    ACT0001.node_name = "Principled BSDF"
+    ACT0001.input_slot = 21
+    ACT0001.value = PAR0002
+    PAR0002.game_object = "NLO:U_O"
+    PAR0002.property_name = "alpha_homming"
+    network.add_cell(PAR0002)
+    network.add_cell(CON0003)
+    network.add_cell(ACT0000)
+    network.add_cell(ACT0001)
     owner["IGNLTree_NodeTree"] = network
     network._owner = owner
     network.setup()

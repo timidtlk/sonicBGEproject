@@ -6,45 +6,45 @@ import math
 
 def _initialize(owner):
     network = nodes.LogicNetwork()
-    CON0000 = nodes.ConditionOnUpdate()
-    ACT0001 = nodes.ActionSetObjectAttribute()
-    PAR0002 = nodes.ParameterObjectAttribute()
-    PAR0003 = nodes.ParameterObjectAttribute()
-    CON0004 = nodes.ConditionNot()
-    ACT0005 = nodes.ActionAlignAxisToVector()
+    ACT0000 = nodes.ActionAlignAxisToVector()
+    CON0001 = nodes.ConditionNot()
+    ACT0002 = nodes.ActionSetObjectAttribute()
+    CON0003 = nodes.ConditionOnUpdate()
+    PAR0004 = nodes.ParameterObjectAttribute()
+    PAR0005 = nodes.ParameterObjectAttribute()
     ACT0006 = nodes.ActionRayPick()
-    ACT0001.condition = CON0004
-    ACT0001.xyz = {'x': True, 'y': True, 'z': False}
-    ACT0001.game_object = "NLO:CharacterController"
-    ACT0001.attribute_value = mathutils.Vector((0.0, 0.0, 0.0))
-    ACT0001.value_type = 'localOrientation'
-    PAR0002.game_object = "NLO:CharacterController"
-    PAR0002.attribute_name = "worldPosition"
-    PAR0003.game_object = "NLO:RayRotate"
-    PAR0003.attribute_name = "worldPosition"
-    CON0004.condition = ACT0006
-    ACT0005.local = True
-    ACT0005.condition = ACT0006
-    ACT0005.game_object = "NLO:U_O"
-    ACT0005.vector = ACT0006.NORMAL
-    ACT0005.axis = 2
-    ACT0005.factor = 1.0
-    ACT0006.condition = CON0000
-    ACT0006.origin = PAR0002
-    ACT0006.destination = PAR0003
+    ACT0000.local = True
+    ACT0000.condition = ACT0006
+    ACT0000.game_object = "NLO:U_O"
+    ACT0000.vector = ACT0006.NORMAL
+    ACT0000.axis = 2
+    ACT0000.factor = 1.0
+    CON0001.condition = ACT0006
+    ACT0002.condition = CON0001
+    ACT0002.xyz = {'x': True, 'y': True, 'z': False}
+    ACT0002.game_object = "NLO:CharacterController"
+    ACT0002.attribute_value = mathutils.Vector((0.0, 0.0, 0.0))
+    ACT0002.value_type = 'localOrientation'
+    PAR0004.game_object = "NLO:CharacterController"
+    PAR0004.attribute_name = "worldPosition"
+    PAR0005.game_object = "NLO:RayRotate"
+    PAR0005.attribute_name = "worldPosition"
+    ACT0006.condition = CON0003
+    ACT0006.origin = PAR0004
+    ACT0006.destination = PAR0005
     ACT0006.local = False
     ACT0006.property_name = "adapt"
     ACT0006.xray = False
     ACT0006.custom_dist = False
     ACT0006.distance = 0.0
     ACT0006.visualize = False
-    network.add_cell(CON0000)
-    network.add_cell(PAR0002)
-    network.add_cell(PAR0003)
+    network.add_cell(CON0003)
+    network.add_cell(PAR0005)
+    network.add_cell(PAR0004)
     network.add_cell(ACT0006)
-    network.add_cell(CON0004)
-    network.add_cell(ACT0001)
-    network.add_cell(ACT0005)
+    network.add_cell(ACT0000)
+    network.add_cell(CON0001)
+    network.add_cell(ACT0002)
     owner["IGNLTree_alignToGround"] = network
     network._owner = owner
     network.setup()

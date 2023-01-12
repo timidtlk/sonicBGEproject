@@ -8,746 +8,809 @@ def _initialize(owner):
     network = nodes.LogicNetwork()
     CON0000 = nodes.ObjectPropertyOperator()
     CON0001 = nodes.ObjectPropertyOperator()
-    CON0002 = nodes.ObjectPropertyOperator()
+    CON0002 = nodes.ConditionAnd()
     CON0003 = nodes.ConditionAnd()
     CON0004 = nodes.ConditionAnd()
-    CON0005 = nodes.ConditionAnd()
-    CON0006 = nodes.ConditionAnd()
-    ACT0007 = nodes.ActionRandomInt()
-    CON0008 = nodes.ObjectPropertyOperator()
-    ACT0009 = nodes.ActionSetGameObjectGameProperty()
-    PAR0010 = nodes.ParameterObjectProperty()
-    ACT0011 = nodes.ActionSetGameObjectGameProperty()
-    CON0012 = nodes.ObjectPropertyOperator()
-    ACT0013 = nodes.ActionTimeFilter()
-    CON0014 = nodes.ConditionOrList()
-    ACT0015 = nodes.ActionSetGameObjectGameProperty()
-    PAR0016 = nodes.ParameterObjectProperty()
-    ACT0017 = nodes.ActionSetGameObjectGameProperty()
-    ACT0018 = nodes.ActionSetGameObjectGameProperty()
-    CON0019 = nodes.ConditionAnd()
-    CON0020 = nodes.ConditionAnd()
-    CON0021 = nodes.ConditionAnd()
-    CON0022 = nodes.ConditionAnd()
-    CON0023 = nodes.ConditionAnd()
-    ACT0024 = nodes.ActionStart3DSoundAdv()
-    ACT0025 = nodes.ActionStart3DSoundAdv()
-    ACT0026 = nodes.ActionStart3DSoundAdv()
-    ACT0027 = nodes.ActionStart3DSoundAdv()
-    ACT0028 = nodes.ActionStart3DSoundAdv()
-    ACT0029 = nodes.ActionSetGameObjectGameProperty()
-    CON0030 = nodes.ObjectPropertyOperator()
-    CON0031 = nodes.ObjectPropertyOperator()
-    CON0032 = nodes.ObjectPropertyOperator()
-    CON0033 = nodes.ObjectPropertyOperator()
-    CON0034 = nodes.ObjectPropertyOperator()
-    CON0035 = nodes.ObjectPropertyOperator()
-    CON0036 = nodes.ConditionAnd()
-    CON0037 = nodes.ConditionAnd()
-    CON0038 = nodes.ConditionAnd()
-    CON0039 = nodes.ConditionAnd()
+    ACT0005 = nodes.ActionRandomInt()
+    CON0006 = nodes.ObjectPropertyOperator()
+    ACT0007 = nodes.ActionSetGameObjectGameProperty()
+    ACT0008 = nodes.ActionTimeFilter()
+    CON0009 = nodes.ConditionOrList()
+    ACT0010 = nodes.ActionSetGameObjectGameProperty()
+    PAR0011 = nodes.ParameterObjectProperty()
+    ACT0012 = nodes.ActionSetGameObjectGameProperty()
+    ACT0013 = nodes.ActionSetGameObjectGameProperty()
+    CON0014 = nodes.ConditionAnd()
+    CON0015 = nodes.ConditionAnd()
+    CON0016 = nodes.ConditionAnd()
+    CON0017 = nodes.ConditionAnd()
+    CON0018 = nodes.ConditionAnd()
+    ACT0019 = nodes.ActionStart3DSoundAdv()
+    ACT0020 = nodes.ActionStart3DSoundAdv()
+    ACT0021 = nodes.ActionStart3DSoundAdv()
+    ACT0022 = nodes.ActionStart3DSoundAdv()
+    ACT0023 = nodes.ActionStart3DSoundAdv()
+    ACT0024 = nodes.ActionSetGameObjectGameProperty()
+    CON0025 = nodes.ObjectPropertyOperator()
+    CON0026 = nodes.ObjectPropertyOperator()
+    CON0027 = nodes.ObjectPropertyOperator()
+    CON0028 = nodes.ObjectPropertyOperator()
+    CON0029 = nodes.ObjectPropertyOperator()
+    CON0030 = nodes.ConditionAnd()
+    CON0031 = nodes.ConditionAnd()
+    CON0032 = nodes.ConditionAnd()
+    CON0033 = nodes.ConditionAnd()
+    CON0034 = nodes.ConditionAnd()
+    ACT0035 = nodes.ActionStart3DSoundAdv()
+    ACT0036 = nodes.ActionStart3DSoundAdv()
+    ACT0037 = nodes.ActionStart3DSoundAdv()
+    ACT0038 = nodes.ActionStart3DSoundAdv()
+    ACT0039 = nodes.ActionStart3DSoundAdv()
     CON0040 = nodes.ConditionAnd()
-    ACT0041 = nodes.ActionStart3DSoundAdv()
-    ACT0042 = nodes.ActionStart3DSoundAdv()
-    ACT0043 = nodes.ActionStart3DSoundAdv()
-    ACT0044 = nodes.ActionStart3DSoundAdv()
-    ACT0045 = nodes.ActionStart3DSoundAdv()
-    CON0046 = nodes.ConditionAnd()
-    CON0047 = nodes.ConditionAnd()
-    CON0048 = nodes.ConditionAnd()
-    CON0049 = nodes.ConditionAnd()
+    CON0041 = nodes.ConditionAnd()
+    CON0042 = nodes.ConditionAnd()
+    CON0043 = nodes.ConditionAnd()
+    CON0044 = nodes.ConditionAnd()
+    CON0045 = nodes.ObjectPropertyOperator()
+    CON0046 = nodes.ObjectPropertyOperator()
+    CON0047 = nodes.ObjectPropertyOperator()
+    CON0048 = nodes.ObjectPropertyOperator()
+    CON0049 = nodes.ObjectPropertyOperator()
     CON0050 = nodes.ConditionAnd()
-    CON0051 = nodes.ObjectPropertyOperator()
-    CON0052 = nodes.ObjectPropertyOperator()
-    CON0053 = nodes.ObjectPropertyOperator()
+    CON0051 = nodes.ConditionAnd()
+    CON0052 = nodes.ConditionAnd()
+    CON0053 = nodes.ConditionAnd()
     CON0054 = nodes.ObjectPropertyOperator()
-    CON0055 = nodes.ObjectPropertyOperator()
-    CON0056 = nodes.ConditionAnd()
-    CON0057 = nodes.ConditionAnd()
-    CON0058 = nodes.ConditionAnd()
-    CON0059 = nodes.ConditionAnd()
-    CON0060 = nodes.ObjectPropertyOperator()
+    CON0055 = nodes.ConditionAnd()
+    CON0056 = nodes.ObjectPropertyOperator()
+    CON0057 = nodes.ObjectPropertyOperator()
+    CON0058 = nodes.ObjectPropertyOperator()
+    CON0059 = nodes.ObjectPropertyOperator()
+    CON0060 = nodes.ConditionAnd()
     CON0061 = nodes.ConditionAnd()
-    CON0062 = nodes.ObjectPropertyOperator()
-    CON0063 = nodes.ObjectPropertyOperator()
-    CON0064 = nodes.ObjectPropertyOperator()
-    CON0065 = nodes.ObjectPropertyOperator()
+    CON0062 = nodes.ConditionAnd()
+    CON0063 = nodes.ConditionAnd()
+    CON0064 = nodes.ConditionAnd()
+    CON0065 = nodes.ConditionAnd()
     CON0066 = nodes.ConditionAnd()
     CON0067 = nodes.ConditionAnd()
     CON0068 = nodes.ConditionAnd()
     CON0069 = nodes.ConditionAnd()
-    CON0070 = nodes.ConditionAnd()
-    CON0071 = nodes.ConditionAnd()
-    CON0072 = nodes.ConditionAnd()
-    CON0073 = nodes.ConditionAnd()
-    CON0074 = nodes.ConditionAnd()
-    CON0075 = nodes.ConditionAnd()
-    ACT0076 = nodes.ActionStart3DSoundAdv()
-    ACT0077 = nodes.ActionStart3DSoundAdv()
-    ACT0078 = nodes.ActionStart3DSoundAdv()
-    ACT0079 = nodes.ActionStart3DSoundAdv()
-    ACT0080 = nodes.ActionStart3DSoundAdv()
-    CON0081 = nodes.ObjectPropertyOperator()
-    CON0082 = nodes.ObjectPropertyOperator()
-    CON0083 = nodes.ObjectPropertyOperator()
-    CON0084 = nodes.ObjectPropertyOperator()
+    ACT0070 = nodes.ActionStart3DSoundAdv()
+    ACT0071 = nodes.ActionStart3DSoundAdv()
+    ACT0072 = nodes.ActionStart3DSoundAdv()
+    ACT0073 = nodes.ActionStart3DSoundAdv()
+    ACT0074 = nodes.ActionStart3DSoundAdv()
+    CON0075 = nodes.ObjectPropertyOperator()
+    CON0076 = nodes.ObjectPropertyOperator()
+    CON0077 = nodes.ObjectPropertyOperator()
+    CON0078 = nodes.ObjectPropertyOperator()
+    CON0079 = nodes.ObjectPropertyOperator()
+    CON0080 = nodes.ConditionAnd()
+    CON0081 = nodes.ConditionAnd()
+    CON0082 = nodes.ConditionAnd()
+    CON0083 = nodes.ConditionAnd()
+    CON0084 = nodes.ConditionAnd()
     CON0085 = nodes.ObjectPropertyOperator()
-    CON0086 = nodes.ObjectPropertyOperator()
-    CON0087 = nodes.ConditionAnd()
+    ACT0086 = nodes.ActionTimeFilter()
+    CON0087 = nodes.ObjectPropertyOperator()
     CON0088 = nodes.ConditionAnd()
     CON0089 = nodes.ConditionAnd()
     CON0090 = nodes.ConditionAnd()
     CON0091 = nodes.ConditionAnd()
-    CON0092 = nodes.ObjectPropertyOperator()
-    CON0093 = nodes.ConditionCollision()
-    ACT0094 = nodes.ActionTimeFilter()
-    CON0095 = nodes.ObjectPropertyOperator()
-    CON0096 = nodes.ConditionAnd()
-    CON0097 = nodes.ConditionAnd()
-    CON0098 = nodes.ConditionAnd()
+    CON0092 = nodes.ConditionAnd()
+    ACT0093 = nodes.ActionStart3DSoundAdv()
+    ACT0094 = nodes.ActionStart3DSoundAdv()
+    ACT0095 = nodes.ActionStart3DSoundAdv()
+    ACT0096 = nodes.ActionStart3DSoundAdv()
+    ACT0097 = nodes.ActionStart3DSoundAdv()
+    CON0098 = nodes.ObjectPropertyOperator()
     CON0099 = nodes.ConditionAnd()
-    CON0100 = nodes.ConditionAnd()
-    ACT0101 = nodes.ActionStart3DSoundAdv()
-    ACT0102 = nodes.ActionStart3DSoundAdv()
-    ACT0103 = nodes.ActionStart3DSoundAdv()
-    ACT0104 = nodes.ActionStart3DSoundAdv()
-    ACT0105 = nodes.ActionStart3DSoundAdv()
+    CON0100 = nodes.ObjectPropertyOperator()
+    PAR0101 = nodes.ParameterObjectAttribute()
+    PAR0102 = nodes.ParameterObjectAttribute()
+    CON0103 = nodes.ConditionOnUpdate()
+    CON0104 = nodes.ConditionCollision()
+    PAR0105 = nodes.ParameterObjectProperty()
+    ACT0106 = nodes.ActionSetGameObjectGameProperty()
+    CON0107 = nodes.ObjectPropertyOperator()
+    CON0108 = nodes.ObjectPropertyOperator()
+    ACT0109 = nodes.ActionStopSound()
+    PAR0110 = nodes.ParameterObjectProperty()
+    CON0111 = nodes.ObjectPropertyOperator()
+    ACT0112 = nodes.ActionTimeFilter()
+    CON0113 = nodes.ConditionValueTrigger()
+    ACT0114 = nodes.ActionTimeFilter()
+    ACT0115 = nodes.ActionStart3DSoundAdv()
+    ACT0116 = nodes.ActionRayPick()
     CON0000.game_object = "NLO:U_O"
     CON0000.property_name = "animation"
-    CON0000.compare_value = "jog"
+    CON0000.compare_value = "jet"
     CON0000.operator = 0
     CON0001.game_object = "NLO:U_O"
     CON0001.property_name = "animation"
-    CON0001.compare_value = "jet"
+    CON0001.compare_value = "boost"
     CON0001.operator = 0
-    CON0002.game_object = "NLO:U_O"
-    CON0002.property_name = "animation"
-    CON0002.compare_value = "boost"
-    CON0002.operator = 0
-    CON0003.condition_a = CON0093
-    CON0003.condition_b = CON0012
-    CON0004.condition_a = CON0093
-    CON0004.condition_b = CON0000
-    CON0005.condition_a = CON0093
-    CON0005.condition_b = CON0001
-    CON0006.condition_a = CON0093
-    CON0006.condition_b = CON0002
-    ACT0007.condition = ACT0013
-    ACT0007.max_value = 5
-    ACT0007.min_value = 1
-    CON0008.game_object = "NLO:CharacterController"
-    CON0008.property_name = "animation"
-    CON0008.compare_value = "idle"
-    CON0008.operator = 1
-    ACT0009.condition = ACT0007.DONE
-    ACT0009.game_object = "NLO:U_O"
-    ACT0009.property_name = "number_footstep"
-    ACT0009.property_value = ACT0007.OUT_A
-    PAR0010.game_object = CON0093.TARGET
-    PAR0010.property_name = "type"
-    ACT0011.condition = CON0093
-    ACT0011.game_object = "NLO:U_O"
-    ACT0011.property_name = "step_ground"
-    ACT0011.property_value = PAR0010
-    CON0012.game_object = "NLO:U_O"
-    CON0012.property_name = "animation"
-    CON0012.compare_value = "walk"
-    CON0012.operator = 0
-    ACT0013.condition = CON0008
-    ACT0013.delay = PAR0016
-    CON0014.ca = CON0003
-    CON0014.cb = CON0004
-    CON0014.cc = CON0005
-    CON0014.cd = CON0006
-    CON0014.ce = None
-    CON0014.cf = None
-    ACT0015.condition = CON0003
-    ACT0015.game_object = "NLO:U_O"
-    ACT0015.property_name = "footstep_time"
-    ACT0015.property_value = 0.30000001192092896
-    PAR0016.game_object = "NLO:U_O"
-    PAR0016.property_name = "footstep_time"
-    ACT0017.condition = CON0004
-    ACT0017.game_object = "NLO:U_O"
-    ACT0017.property_name = "footstep_time"
-    ACT0017.property_value = 0.20000000298023224
-    ACT0018.condition = CON0005
-    ACT0018.game_object = "NLO:U_O"
-    ACT0018.property_name = "footstep_time"
-    ACT0018.property_value = 0.10000000149011612
-    CON0019.condition_a = ACT0094
-    CON0019.condition_b = CON0039
-    CON0020.condition_a = ACT0094
-    CON0020.condition_b = CON0040
-    CON0021.condition_a = ACT0094
-    CON0021.condition_b = CON0038
-    CON0022.condition_a = ACT0094
-    CON0022.condition_b = CON0036
-    CON0023.condition_a = ACT0094
-    CON0023.condition_b = CON0037
-    ACT0024.condition = CON0022
-    ACT0024.speaker = "NLO:CharacterController"
-    ACT0024.sound = "D:/Sonic BGE Project/sounds/footsteps/001_conc/00_sn_walk_conc_1.wav"
-    ACT0024.occlusion = False
-    ACT0024.transition = 0.10000000149011612
-    ACT0024.cutoff = 0.10000000149011612
-    ACT0024.device_custom = "default3D"
-    ACT0024.loop_count = 0
-    ACT0024.pitch = 1.0
-    ACT0024.volume = 1.0
-    ACT0024.attenuation = 1.0
-    ACT0024.distance_ref = 1.0
-    ACT0024.cone_angle = mathutils.Vector((360.0, 360.0))
-    ACT0024.cone_outer_volume = 0.0
-    ACT0025.condition = CON0023
-    ACT0025.speaker = "NLO:CharacterController"
-    ACT0025.sound = "D:/Sonic BGE Project/sounds/footsteps/001_conc/00_sn_walk_conc_2.wav"
-    ACT0025.occlusion = False
-    ACT0025.transition = 0.10000000149011612
-    ACT0025.cutoff = 0.10000000149011612
-    ACT0025.device_custom = "default3D"
-    ACT0025.loop_count = 0
-    ACT0025.pitch = 1.0
-    ACT0025.volume = 1.0
-    ACT0025.attenuation = 1.0
-    ACT0025.distance_ref = 1.0
-    ACT0025.cone_angle = mathutils.Vector((360.0, 360.0))
-    ACT0025.cone_outer_volume = 0.0
-    ACT0026.condition = CON0021
-    ACT0026.speaker = "NLO:CharacterController"
-    ACT0026.sound = "D:/Sonic BGE Project/sounds/footsteps/001_conc/00_sn_walk_conc_3.wav"
-    ACT0026.occlusion = False
-    ACT0026.transition = 0.10000000149011612
-    ACT0026.cutoff = 0.10000000149011612
-    ACT0026.device_custom = "default3D"
-    ACT0026.loop_count = 0
-    ACT0026.pitch = 1.0
-    ACT0026.volume = 1.0
-    ACT0026.attenuation = 1.0
-    ACT0026.distance_ref = 1.0
-    ACT0026.cone_angle = mathutils.Vector((360.0, 360.0))
-    ACT0026.cone_outer_volume = 0.0
-    ACT0027.condition = CON0019
-    ACT0027.speaker = "NLO:CharacterController"
-    ACT0027.sound = "D:/Sonic BGE Project/sounds/footsteps/001_conc/00_sn_walk_conc_4.wav"
-    ACT0027.occlusion = False
-    ACT0027.transition = 0.10000000149011612
-    ACT0027.cutoff = 0.10000000149011612
-    ACT0027.device_custom = "default3D"
-    ACT0027.loop_count = 0
-    ACT0027.pitch = 1.0
-    ACT0027.volume = 1.0
-    ACT0027.attenuation = 1.0
-    ACT0027.distance_ref = 1.0
-    ACT0027.cone_angle = mathutils.Vector((360.0, 360.0))
-    ACT0027.cone_outer_volume = 0.0
-    ACT0028.condition = CON0020
-    ACT0028.speaker = "NLO:CharacterController"
-    ACT0028.sound = "D:/Sonic BGE Project/sounds/footsteps/001_conc/00_sn_walk_conc_5.wav"
-    ACT0028.occlusion = False
-    ACT0028.transition = 0.10000000149011612
-    ACT0028.cutoff = 0.10000000149011612
-    ACT0028.device_custom = "default3D"
-    ACT0028.loop_count = 0
-    ACT0028.pitch = 1.0
-    ACT0028.volume = 1.0
-    ACT0028.attenuation = 1.0
-    ACT0028.distance_ref = 1.0
-    ACT0028.cone_angle = mathutils.Vector((360.0, 360.0))
-    ACT0028.cone_outer_volume = 0.0
-    ACT0029.condition = CON0006
-    ACT0029.game_object = "NLO:U_O"
-    ACT0029.property_name = "footstep_time"
-    ACT0029.property_value = 0.07999999821186066
-    CON0030.game_object = "NLO:U_O"
-    CON0030.property_name = "number_footstep"
-    CON0030.compare_value = 1
-    CON0030.operator = 0
-    CON0031.game_object = "NLO:U_O"
-    CON0031.property_name = "number_footstep"
-    CON0031.compare_value = 2
-    CON0031.operator = 0
-    CON0032.game_object = "NLO:U_O"
-    CON0032.property_name = "number_footstep"
-    CON0032.compare_value = 3
-    CON0032.operator = 0
-    CON0033.game_object = "NLO:U_O"
-    CON0033.property_name = "number_footstep"
-    CON0033.compare_value = 4
-    CON0033.operator = 0
-    CON0034.game_object = "NLO:U_O"
-    CON0034.property_name = "number_footstep"
-    CON0034.compare_value = 5
-    CON0034.operator = 0
-    CON0035.game_object = "NLO:U_O"
-    CON0035.property_name = "step_ground"
-    CON0035.compare_value = "concrete"
-    CON0035.operator = 0
-    CON0036.condition_a = CON0035
-    CON0036.condition_b = CON0030
-    CON0037.condition_a = CON0035
-    CON0037.condition_b = CON0031
-    CON0038.condition_a = CON0035
-    CON0038.condition_b = CON0032
-    CON0039.condition_a = CON0035
-    CON0039.condition_b = CON0033
-    CON0040.condition_a = CON0035
-    CON0040.condition_b = CON0034
-    ACT0041.condition = CON0047
-    ACT0041.speaker = "NLO:CharacterController"
-    ACT0041.sound = "D:/Sonic BGE Project/sounds/footsteps/004_wood/00_sn_walk_wood_5.wav"
-    ACT0041.occlusion = False
-    ACT0041.transition = 0.10000000149011612
-    ACT0041.cutoff = 0.10000000149011612
-    ACT0041.device_custom = "default3D"
-    ACT0041.loop_count = 0
-    ACT0041.pitch = 1.0
-    ACT0041.volume = 1.0
-    ACT0041.attenuation = 1.0
-    ACT0041.distance_ref = 1.0
-    ACT0041.cone_angle = mathutils.Vector((360.0, 360.0))
-    ACT0041.cone_outer_volume = 0.0
-    ACT0042.condition = CON0046
-    ACT0042.speaker = "NLO:CharacterController"
-    ACT0042.sound = "D:/Sonic BGE Project/sounds/footsteps/004_wood/00_sn_walk_wood_5.wav"
-    ACT0042.occlusion = False
-    ACT0042.transition = 0.10000000149011612
-    ACT0042.cutoff = 0.10000000149011612
-    ACT0042.device_custom = "default3D"
-    ACT0042.loop_count = 0
-    ACT0042.pitch = 1.0
-    ACT0042.volume = 1.0
-    ACT0042.attenuation = 1.0
-    ACT0042.distance_ref = 1.0
-    ACT0042.cone_angle = mathutils.Vector((360.0, 360.0))
-    ACT0042.cone_outer_volume = 0.0
-    ACT0043.condition = CON0048
-    ACT0043.speaker = "NLO:CharacterController"
-    ACT0043.sound = "D:/Sonic BGE Project/sounds/footsteps/004_wood/00_sn_walk_wood_3.wav"
-    ACT0043.occlusion = False
-    ACT0043.transition = 0.10000000149011612
-    ACT0043.cutoff = 0.10000000149011612
-    ACT0043.device_custom = "default3D"
-    ACT0043.loop_count = 0
-    ACT0043.pitch = 1.0
-    ACT0043.volume = 1.0
-    ACT0043.attenuation = 1.0
-    ACT0043.distance_ref = 1.0
-    ACT0043.cone_angle = mathutils.Vector((360.0, 360.0))
-    ACT0043.cone_outer_volume = 0.0
-    ACT0044.condition = CON0050
-    ACT0044.speaker = "NLO:CharacterController"
-    ACT0044.sound = "D:/Sonic BGE Project/sounds/footsteps/004_wood/00_sn_walk_wood_2.wav"
-    ACT0044.occlusion = False
-    ACT0044.transition = 0.10000000149011612
-    ACT0044.cutoff = 0.10000000149011612
-    ACT0044.device_custom = "default3D"
-    ACT0044.loop_count = 0
-    ACT0044.pitch = 1.0
-    ACT0044.volume = 1.0
-    ACT0044.attenuation = 1.0
-    ACT0044.distance_ref = 1.0
-    ACT0044.cone_angle = mathutils.Vector((360.0, 360.0))
-    ACT0044.cone_outer_volume = 0.0
-    ACT0045.condition = CON0061
-    ACT0045.speaker = "NLO:CharacterController"
-    ACT0045.sound = "D:/Sonic BGE Project/sounds/footsteps/004_wood/00_sn_walk_wood_1.wav"
-    ACT0045.occlusion = False
-    ACT0045.transition = 0.10000000149011612
-    ACT0045.cutoff = 0.10000000149011612
-    ACT0045.device_custom = "default3D"
-    ACT0045.loop_count = 0
-    ACT0045.pitch = 1.0
-    ACT0045.volume = 1.0
-    ACT0045.attenuation = 1.0
-    ACT0045.distance_ref = 1.0
-    ACT0045.cone_angle = mathutils.Vector((360.0, 360.0))
-    ACT0045.cone_outer_volume = 0.0
-    CON0046.condition_a = ACT0094
-    CON0046.condition_b = CON0057
-    CON0047.condition_a = ACT0094
-    CON0047.condition_b = CON0058
-    CON0048.condition_a = ACT0094
-    CON0048.condition_b = CON0059
-    CON0049.condition_a = CON0060
-    CON0049.condition_b = CON0055
-    CON0050.condition_a = ACT0094
-    CON0050.condition_b = CON0056
-    CON0051.game_object = "NLO:U_O"
-    CON0051.property_name = "number_footstep"
-    CON0051.compare_value = 2
-    CON0051.operator = 0
-    CON0052.game_object = "NLO:U_O"
-    CON0052.property_name = "number_footstep"
-    CON0052.compare_value = 3
-    CON0052.operator = 0
-    CON0053.game_object = "NLO:U_O"
-    CON0053.property_name = "number_footstep"
-    CON0053.compare_value = 4
-    CON0053.operator = 0
+    CON0002.condition_a = ACT0116
+    CON0002.condition_b = CON0108
+    CON0003.condition_a = ACT0116
+    CON0003.condition_b = CON0000
+    CON0004.condition_a = ACT0116
+    CON0004.condition_b = CON0001
+    ACT0005.condition = ACT0008
+    ACT0005.max_value = 5
+    ACT0005.min_value = 1
+    CON0006.game_object = "NLO:CharacterController"
+    CON0006.property_name = "animation"
+    CON0006.compare_value = "idle"
+    CON0006.operator = 1
+    ACT0007.condition = ACT0005.DONE
+    ACT0007.game_object = "NLO:U_O"
+    ACT0007.property_name = "number_footstep"
+    ACT0007.property_value = ACT0005.OUT_A
+    ACT0008.condition = CON0006
+    ACT0008.delay = PAR0011
+    CON0009.ca = CON0099
+    CON0009.cb = CON0002
+    CON0009.cc = CON0003
+    CON0009.cd = CON0004
+    CON0009.ce = None
+    CON0009.cf = None
+    ACT0010.condition = CON0099
+    ACT0010.game_object = "NLO:U_O"
+    ACT0010.property_name = "footstep_time"
+    ACT0010.property_value = 0.30000001192092896
+    PAR0011.game_object = "NLO:U_O"
+    PAR0011.property_name = "footstep_time"
+    ACT0012.condition = CON0002
+    ACT0012.game_object = "NLO:U_O"
+    ACT0012.property_name = "footstep_time"
+    ACT0012.property_value = 0.20000000298023224
+    ACT0013.condition = CON0003
+    ACT0013.game_object = "NLO:U_O"
+    ACT0013.property_name = "footstep_time"
+    ACT0013.property_value = 0.10000000149011612
+    CON0014.condition_a = ACT0086
+    CON0014.condition_b = CON0033
+    CON0015.condition_a = ACT0086
+    CON0015.condition_b = CON0034
+    CON0016.condition_a = ACT0086
+    CON0016.condition_b = CON0032
+    CON0017.condition_a = ACT0086
+    CON0017.condition_b = CON0030
+    CON0018.condition_a = ACT0086
+    CON0018.condition_b = CON0031
+    ACT0019.condition = CON0017
+    ACT0019.speaker = "NLO:CharacterController"
+    ACT0019.sound = "D:/Sonic BGE Project/sounds/footsteps/001_conc/00_sn_walk_conc_1.wav"
+    ACT0019.occlusion = False
+    ACT0019.transition = 0.10000000149011612
+    ACT0019.cutoff = 0.10000000149011612
+    ACT0019.device_custom = "default3D"
+    ACT0019.loop_count = 0
+    ACT0019.pitch = 1.0
+    ACT0019.volume = 1.0
+    ACT0019.attenuation = 1.0
+    ACT0019.distance_ref = 1.0
+    ACT0019.cone_angle = mathutils.Vector((360.0, 360.0))
+    ACT0019.cone_outer_volume = 0.0
+    ACT0020.condition = CON0018
+    ACT0020.speaker = "NLO:CharacterController"
+    ACT0020.sound = "D:/Sonic BGE Project/sounds/footsteps/001_conc/00_sn_walk_conc_2.wav"
+    ACT0020.occlusion = False
+    ACT0020.transition = 0.10000000149011612
+    ACT0020.cutoff = 0.10000000149011612
+    ACT0020.device_custom = "default3D"
+    ACT0020.loop_count = 0
+    ACT0020.pitch = 1.0
+    ACT0020.volume = 1.0
+    ACT0020.attenuation = 1.0
+    ACT0020.distance_ref = 1.0
+    ACT0020.cone_angle = mathutils.Vector((360.0, 360.0))
+    ACT0020.cone_outer_volume = 0.0
+    ACT0021.condition = CON0016
+    ACT0021.speaker = "NLO:CharacterController"
+    ACT0021.sound = "D:/Sonic BGE Project/sounds/footsteps/001_conc/00_sn_walk_conc_3.wav"
+    ACT0021.occlusion = False
+    ACT0021.transition = 0.10000000149011612
+    ACT0021.cutoff = 0.10000000149011612
+    ACT0021.device_custom = "default3D"
+    ACT0021.loop_count = 0
+    ACT0021.pitch = 1.0
+    ACT0021.volume = 1.0
+    ACT0021.attenuation = 1.0
+    ACT0021.distance_ref = 1.0
+    ACT0021.cone_angle = mathutils.Vector((360.0, 360.0))
+    ACT0021.cone_outer_volume = 0.0
+    ACT0022.condition = CON0014
+    ACT0022.speaker = "NLO:CharacterController"
+    ACT0022.sound = "D:/Sonic BGE Project/sounds/footsteps/001_conc/00_sn_walk_conc_4.wav"
+    ACT0022.occlusion = False
+    ACT0022.transition = 0.10000000149011612
+    ACT0022.cutoff = 0.10000000149011612
+    ACT0022.device_custom = "default3D"
+    ACT0022.loop_count = 0
+    ACT0022.pitch = 1.0
+    ACT0022.volume = 1.0
+    ACT0022.attenuation = 1.0
+    ACT0022.distance_ref = 1.0
+    ACT0022.cone_angle = mathutils.Vector((360.0, 360.0))
+    ACT0022.cone_outer_volume = 0.0
+    ACT0023.condition = CON0015
+    ACT0023.speaker = "NLO:CharacterController"
+    ACT0023.sound = "D:/Sonic BGE Project/sounds/footsteps/001_conc/00_sn_walk_conc_5.wav"
+    ACT0023.occlusion = False
+    ACT0023.transition = 0.10000000149011612
+    ACT0023.cutoff = 0.10000000149011612
+    ACT0023.device_custom = "default3D"
+    ACT0023.loop_count = 0
+    ACT0023.pitch = 1.0
+    ACT0023.volume = 1.0
+    ACT0023.attenuation = 1.0
+    ACT0023.distance_ref = 1.0
+    ACT0023.cone_angle = mathutils.Vector((360.0, 360.0))
+    ACT0023.cone_outer_volume = 0.0
+    ACT0024.condition = CON0004
+    ACT0024.game_object = "NLO:U_O"
+    ACT0024.property_name = "footstep_time"
+    ACT0024.property_value = 0.07999999821186066
+    CON0025.game_object = "NLO:U_O"
+    CON0025.property_name = "number_footstep"
+    CON0025.compare_value = 1
+    CON0025.operator = 0
+    CON0026.game_object = "NLO:U_O"
+    CON0026.property_name = "number_footstep"
+    CON0026.compare_value = 2
+    CON0026.operator = 0
+    CON0027.game_object = "NLO:U_O"
+    CON0027.property_name = "number_footstep"
+    CON0027.compare_value = 3
+    CON0027.operator = 0
+    CON0028.game_object = "NLO:U_O"
+    CON0028.property_name = "number_footstep"
+    CON0028.compare_value = 4
+    CON0028.operator = 0
+    CON0029.game_object = "NLO:U_O"
+    CON0029.property_name = "number_footstep"
+    CON0029.compare_value = 5
+    CON0029.operator = 0
+    CON0030.condition_a = CON0100
+    CON0030.condition_b = CON0025
+    CON0031.condition_a = CON0100
+    CON0031.condition_b = CON0026
+    CON0032.condition_a = CON0100
+    CON0032.condition_b = CON0027
+    CON0033.condition_a = CON0100
+    CON0033.condition_b = CON0028
+    CON0034.condition_a = CON0100
+    CON0034.condition_b = CON0029
+    ACT0035.condition = CON0041
+    ACT0035.speaker = "NLO:CharacterController"
+    ACT0035.sound = "D:/Sonic BGE Project/sounds/footsteps/004_wood/00_sn_walk_wood_5.wav"
+    ACT0035.occlusion = False
+    ACT0035.transition = 0.10000000149011612
+    ACT0035.cutoff = 0.10000000149011612
+    ACT0035.device_custom = "default3D"
+    ACT0035.loop_count = 0
+    ACT0035.pitch = 1.0
+    ACT0035.volume = 1.0
+    ACT0035.attenuation = 1.0
+    ACT0035.distance_ref = 1.0
+    ACT0035.cone_angle = mathutils.Vector((360.0, 360.0))
+    ACT0035.cone_outer_volume = 0.0
+    ACT0036.condition = CON0040
+    ACT0036.speaker = "NLO:CharacterController"
+    ACT0036.sound = "D:/Sonic BGE Project/sounds/footsteps/004_wood/00_sn_walk_wood_5.wav"
+    ACT0036.occlusion = False
+    ACT0036.transition = 0.10000000149011612
+    ACT0036.cutoff = 0.10000000149011612
+    ACT0036.device_custom = "default3D"
+    ACT0036.loop_count = 0
+    ACT0036.pitch = 1.0
+    ACT0036.volume = 1.0
+    ACT0036.attenuation = 1.0
+    ACT0036.distance_ref = 1.0
+    ACT0036.cone_angle = mathutils.Vector((360.0, 360.0))
+    ACT0036.cone_outer_volume = 0.0
+    ACT0037.condition = CON0042
+    ACT0037.speaker = "NLO:CharacterController"
+    ACT0037.sound = "D:/Sonic BGE Project/sounds/footsteps/004_wood/00_sn_walk_wood_3.wav"
+    ACT0037.occlusion = False
+    ACT0037.transition = 0.10000000149011612
+    ACT0037.cutoff = 0.10000000149011612
+    ACT0037.device_custom = "default3D"
+    ACT0037.loop_count = 0
+    ACT0037.pitch = 1.0
+    ACT0037.volume = 1.0
+    ACT0037.attenuation = 1.0
+    ACT0037.distance_ref = 1.0
+    ACT0037.cone_angle = mathutils.Vector((360.0, 360.0))
+    ACT0037.cone_outer_volume = 0.0
+    ACT0038.condition = CON0044
+    ACT0038.speaker = "NLO:CharacterController"
+    ACT0038.sound = "D:/Sonic BGE Project/sounds/footsteps/004_wood/00_sn_walk_wood_2.wav"
+    ACT0038.occlusion = False
+    ACT0038.transition = 0.10000000149011612
+    ACT0038.cutoff = 0.10000000149011612
+    ACT0038.device_custom = "default3D"
+    ACT0038.loop_count = 0
+    ACT0038.pitch = 1.0
+    ACT0038.volume = 1.0
+    ACT0038.attenuation = 1.0
+    ACT0038.distance_ref = 1.0
+    ACT0038.cone_angle = mathutils.Vector((360.0, 360.0))
+    ACT0038.cone_outer_volume = 0.0
+    ACT0039.condition = CON0055
+    ACT0039.speaker = "NLO:CharacterController"
+    ACT0039.sound = "D:/Sonic BGE Project/sounds/footsteps/004_wood/00_sn_walk_wood_1.wav"
+    ACT0039.occlusion = False
+    ACT0039.transition = 0.10000000149011612
+    ACT0039.cutoff = 0.10000000149011612
+    ACT0039.device_custom = "default3D"
+    ACT0039.loop_count = 0
+    ACT0039.pitch = 1.0
+    ACT0039.volume = 1.0
+    ACT0039.attenuation = 1.0
+    ACT0039.distance_ref = 1.0
+    ACT0039.cone_angle = mathutils.Vector((360.0, 360.0))
+    ACT0039.cone_outer_volume = 0.0
+    CON0040.condition_a = ACT0086
+    CON0040.condition_b = CON0051
+    CON0041.condition_a = ACT0086
+    CON0041.condition_b = CON0052
+    CON0042.condition_a = ACT0086
+    CON0042.condition_b = CON0053
+    CON0043.condition_a = CON0054
+    CON0043.condition_b = CON0049
+    CON0044.condition_a = ACT0086
+    CON0044.condition_b = CON0050
+    CON0045.game_object = "NLO:U_O"
+    CON0045.property_name = "number_footstep"
+    CON0045.compare_value = 2
+    CON0045.operator = 0
+    CON0046.game_object = "NLO:U_O"
+    CON0046.property_name = "number_footstep"
+    CON0046.compare_value = 3
+    CON0046.operator = 0
+    CON0047.game_object = "NLO:U_O"
+    CON0047.property_name = "number_footstep"
+    CON0047.compare_value = 4
+    CON0047.operator = 0
+    CON0048.game_object = "NLO:U_O"
+    CON0048.property_name = "number_footstep"
+    CON0048.compare_value = 5
+    CON0048.operator = 0
+    CON0049.game_object = "NLO:U_O"
+    CON0049.property_name = "number_footstep"
+    CON0049.compare_value = 1
+    CON0049.operator = 0
+    CON0050.condition_a = CON0054
+    CON0050.condition_b = CON0045
+    CON0051.condition_a = CON0054
+    CON0051.condition_b = CON0047
+    CON0052.condition_a = CON0054
+    CON0052.condition_b = CON0048
+    CON0053.condition_a = CON0054
+    CON0053.condition_b = CON0046
     CON0054.game_object = "NLO:U_O"
-    CON0054.property_name = "number_footstep"
-    CON0054.compare_value = 5
+    CON0054.property_name = "step_ground"
+    CON0054.compare_value = "wood"
     CON0054.operator = 0
-    CON0055.game_object = "NLO:U_O"
-    CON0055.property_name = "number_footstep"
-    CON0055.compare_value = 1
-    CON0055.operator = 0
-    CON0056.condition_a = CON0060
-    CON0056.condition_b = CON0051
-    CON0057.condition_a = CON0060
-    CON0057.condition_b = CON0053
-    CON0058.condition_a = CON0060
-    CON0058.condition_b = CON0054
-    CON0059.condition_a = CON0060
-    CON0059.condition_b = CON0052
-    CON0060.game_object = "NLO:U_O"
-    CON0060.property_name = "step_ground"
-    CON0060.compare_value = "wood"
-    CON0060.operator = 0
-    CON0061.condition_a = ACT0094
-    CON0061.condition_b = CON0049
-    CON0062.game_object = "NLO:U_O"
-    CON0062.property_name = "number_footstep"
-    CON0062.compare_value = 2
-    CON0062.operator = 0
-    CON0063.game_object = "NLO:U_O"
-    CON0063.property_name = "number_footstep"
-    CON0063.compare_value = 3
-    CON0063.operator = 0
-    CON0064.game_object = "NLO:U_O"
-    CON0064.property_name = "number_footstep"
-    CON0064.compare_value = 4
-    CON0064.operator = 0
-    CON0065.game_object = "NLO:U_O"
-    CON0065.property_name = "number_footstep"
-    CON0065.compare_value = 5
-    CON0065.operator = 0
-    CON0066.condition_a = ACT0094
-    CON0066.condition_b = CON0071
-    CON0067.condition_a = ACT0094
-    CON0067.condition_b = CON0072
-    CON0068.condition_a = ACT0094
-    CON0068.condition_b = CON0073
-    CON0069.condition_a = ACT0094
-    CON0069.condition_b = CON0074
-    CON0070.condition_a = ACT0094
-    CON0070.condition_b = CON0075
-    CON0071.condition_a = CON0081
-    CON0071.condition_b = CON0082
-    CON0072.condition_a = CON0081
-    CON0072.condition_b = CON0062
-    CON0073.condition_a = CON0081
-    CON0073.condition_b = CON0063
-    CON0074.condition_a = CON0081
-    CON0074.condition_b = CON0064
-    CON0075.condition_a = CON0081
-    CON0075.condition_b = CON0065
-    ACT0076.condition = CON0066
-    ACT0076.speaker = "NLO:CharacterController"
-    ACT0076.sound = "D:/Sonic BGE Project/sounds/footsteps/002_metalpl/00_sn_walk_mtlp_1.wav"
-    ACT0076.occlusion = False
-    ACT0076.transition = 0.10000000149011612
-    ACT0076.cutoff = 0.10000000149011612
-    ACT0076.device_custom = "default3D"
-    ACT0076.loop_count = 0
-    ACT0076.pitch = 1.0
-    ACT0076.volume = 1.0
-    ACT0076.attenuation = 1.0
-    ACT0076.distance_ref = 1.0
-    ACT0076.cone_angle = mathutils.Vector((360.0, 360.0))
-    ACT0076.cone_outer_volume = 0.0
-    ACT0077.condition = CON0067
-    ACT0077.speaker = "NLO:CharacterController"
-    ACT0077.sound = "D:/Sonic BGE Project/sounds/footsteps/002_metalpl/00_sn_walk_mtlp_2.wav"
-    ACT0077.occlusion = False
-    ACT0077.transition = 0.10000000149011612
-    ACT0077.cutoff = 0.10000000149011612
-    ACT0077.device_custom = "default3D"
-    ACT0077.loop_count = 0
-    ACT0077.pitch = 1.0
-    ACT0077.volume = 1.0
-    ACT0077.attenuation = 1.0
-    ACT0077.distance_ref = 1.0
-    ACT0077.cone_angle = mathutils.Vector((360.0, 360.0))
-    ACT0077.cone_outer_volume = 0.0
-    ACT0078.condition = CON0068
-    ACT0078.speaker = "NLO:CharacterController"
-    ACT0078.sound = "D:/Sonic BGE Project/sounds/footsteps/002_metalpl/00_sn_walk_mtlp_3.wav"
-    ACT0078.occlusion = False
-    ACT0078.transition = 0.10000000149011612
-    ACT0078.cutoff = 0.10000000149011612
-    ACT0078.device_custom = "default3D"
-    ACT0078.loop_count = 0
-    ACT0078.pitch = 1.0
-    ACT0078.volume = 1.0
-    ACT0078.attenuation = 1.0
-    ACT0078.distance_ref = 1.0
-    ACT0078.cone_angle = mathutils.Vector((360.0, 360.0))
-    ACT0078.cone_outer_volume = 0.0
-    ACT0079.condition = CON0069
-    ACT0079.speaker = "NLO:CharacterController"
-    ACT0079.sound = "D:/Sonic BGE Project/sounds/footsteps/002_metalpl/00_sn_walk_mtlp_4.wav"
-    ACT0079.occlusion = False
-    ACT0079.transition = 0.10000000149011612
-    ACT0079.cutoff = 0.10000000149011612
-    ACT0079.device_custom = "default3D"
-    ACT0079.loop_count = 0
-    ACT0079.pitch = 1.0
-    ACT0079.volume = 1.0
-    ACT0079.attenuation = 1.0
-    ACT0079.distance_ref = 1.0
-    ACT0079.cone_angle = mathutils.Vector((360.0, 360.0))
-    ACT0079.cone_outer_volume = 0.0
-    ACT0080.condition = CON0070
-    ACT0080.speaker = "NLO:CharacterController"
-    ACT0080.sound = "D:/Sonic BGE Project/sounds/footsteps/002_metalpl/00_sn_walk_mtlp_5.wav"
-    ACT0080.occlusion = False
-    ACT0080.transition = 0.10000000149011612
-    ACT0080.cutoff = 0.10000000149011612
-    ACT0080.device_custom = "default3D"
-    ACT0080.loop_count = 0
-    ACT0080.pitch = 1.0
-    ACT0080.volume = 1.0
-    ACT0080.attenuation = 1.0
-    ACT0080.distance_ref = 1.0
-    ACT0080.cone_angle = mathutils.Vector((360.0, 360.0))
-    ACT0080.cone_outer_volume = 0.0
-    CON0081.game_object = "NLO:U_O"
-    CON0081.property_name = "step_ground"
-    CON0081.compare_value = "metal"
-    CON0081.operator = 0
-    CON0082.game_object = "NLO:U_O"
-    CON0082.property_name = "number_footstep"
-    CON0082.compare_value = 1
-    CON0082.operator = 0
-    CON0083.game_object = "NLO:U_O"
-    CON0083.property_name = "number_footstep"
-    CON0083.compare_value = 2
-    CON0083.operator = 0
-    CON0084.game_object = "NLO:U_O"
-    CON0084.property_name = "number_footstep"
-    CON0084.compare_value = 3
-    CON0084.operator = 0
+    CON0055.condition_a = ACT0086
+    CON0055.condition_b = CON0043
+    CON0056.game_object = "NLO:U_O"
+    CON0056.property_name = "number_footstep"
+    CON0056.compare_value = 2
+    CON0056.operator = 0
+    CON0057.game_object = "NLO:U_O"
+    CON0057.property_name = "number_footstep"
+    CON0057.compare_value = 3
+    CON0057.operator = 0
+    CON0058.game_object = "NLO:U_O"
+    CON0058.property_name = "number_footstep"
+    CON0058.compare_value = 4
+    CON0058.operator = 0
+    CON0059.game_object = "NLO:U_O"
+    CON0059.property_name = "number_footstep"
+    CON0059.compare_value = 5
+    CON0059.operator = 0
+    CON0060.condition_a = ACT0086
+    CON0060.condition_b = CON0065
+    CON0061.condition_a = ACT0086
+    CON0061.condition_b = CON0066
+    CON0062.condition_a = ACT0086
+    CON0062.condition_b = CON0067
+    CON0063.condition_a = ACT0086
+    CON0063.condition_b = CON0068
+    CON0064.condition_a = ACT0086
+    CON0064.condition_b = CON0069
+    CON0065.condition_a = CON0098
+    CON0065.condition_b = CON0075
+    CON0066.condition_a = CON0098
+    CON0066.condition_b = CON0056
+    CON0067.condition_a = CON0098
+    CON0067.condition_b = CON0057
+    CON0068.condition_a = CON0098
+    CON0068.condition_b = CON0058
+    CON0069.condition_a = CON0098
+    CON0069.condition_b = CON0059
+    ACT0070.condition = CON0060
+    ACT0070.speaker = "NLO:CharacterController"
+    ACT0070.sound = "D:/Sonic BGE Project/sounds/footsteps/002_metalpl/00_sn_walk_mtlp_1.wav"
+    ACT0070.occlusion = False
+    ACT0070.transition = 0.10000000149011612
+    ACT0070.cutoff = 0.10000000149011612
+    ACT0070.device_custom = "default3D"
+    ACT0070.loop_count = 0
+    ACT0070.pitch = 1.0
+    ACT0070.volume = 1.0
+    ACT0070.attenuation = 1.0
+    ACT0070.distance_ref = 1.0
+    ACT0070.cone_angle = mathutils.Vector((360.0, 360.0))
+    ACT0070.cone_outer_volume = 0.0
+    ACT0071.condition = CON0061
+    ACT0071.speaker = "NLO:CharacterController"
+    ACT0071.sound = "D:/Sonic BGE Project/sounds/footsteps/002_metalpl/00_sn_walk_mtlp_2.wav"
+    ACT0071.occlusion = False
+    ACT0071.transition = 0.10000000149011612
+    ACT0071.cutoff = 0.10000000149011612
+    ACT0071.device_custom = "default3D"
+    ACT0071.loop_count = 0
+    ACT0071.pitch = 1.0
+    ACT0071.volume = 1.0
+    ACT0071.attenuation = 1.0
+    ACT0071.distance_ref = 1.0
+    ACT0071.cone_angle = mathutils.Vector((360.0, 360.0))
+    ACT0071.cone_outer_volume = 0.0
+    ACT0072.condition = CON0062
+    ACT0072.speaker = "NLO:CharacterController"
+    ACT0072.sound = "D:/Sonic BGE Project/sounds/footsteps/002_metalpl/00_sn_walk_mtlp_3.wav"
+    ACT0072.occlusion = False
+    ACT0072.transition = 0.10000000149011612
+    ACT0072.cutoff = 0.10000000149011612
+    ACT0072.device_custom = "default3D"
+    ACT0072.loop_count = 0
+    ACT0072.pitch = 1.0
+    ACT0072.volume = 1.0
+    ACT0072.attenuation = 1.0
+    ACT0072.distance_ref = 1.0
+    ACT0072.cone_angle = mathutils.Vector((360.0, 360.0))
+    ACT0072.cone_outer_volume = 0.0
+    ACT0073.condition = CON0063
+    ACT0073.speaker = "NLO:CharacterController"
+    ACT0073.sound = "D:/Sonic BGE Project/sounds/footsteps/002_metalpl/00_sn_walk_mtlp_4.wav"
+    ACT0073.occlusion = False
+    ACT0073.transition = 0.10000000149011612
+    ACT0073.cutoff = 0.10000000149011612
+    ACT0073.device_custom = "default3D"
+    ACT0073.loop_count = 0
+    ACT0073.pitch = 1.0
+    ACT0073.volume = 1.0
+    ACT0073.attenuation = 1.0
+    ACT0073.distance_ref = 1.0
+    ACT0073.cone_angle = mathutils.Vector((360.0, 360.0))
+    ACT0073.cone_outer_volume = 0.0
+    ACT0074.condition = CON0064
+    ACT0074.speaker = "NLO:CharacterController"
+    ACT0074.sound = "D:/Sonic BGE Project/sounds/footsteps/002_metalpl/00_sn_walk_mtlp_5.wav"
+    ACT0074.occlusion = False
+    ACT0074.transition = 0.10000000149011612
+    ACT0074.cutoff = 0.10000000149011612
+    ACT0074.device_custom = "default3D"
+    ACT0074.loop_count = 0
+    ACT0074.pitch = 1.0
+    ACT0074.volume = 1.0
+    ACT0074.attenuation = 1.0
+    ACT0074.distance_ref = 1.0
+    ACT0074.cone_angle = mathutils.Vector((360.0, 360.0))
+    ACT0074.cone_outer_volume = 0.0
+    CON0075.game_object = "NLO:U_O"
+    CON0075.property_name = "number_footstep"
+    CON0075.compare_value = 1
+    CON0075.operator = 0
+    CON0076.game_object = "NLO:U_O"
+    CON0076.property_name = "number_footstep"
+    CON0076.compare_value = 2
+    CON0076.operator = 0
+    CON0077.game_object = "NLO:U_O"
+    CON0077.property_name = "number_footstep"
+    CON0077.compare_value = 3
+    CON0077.operator = 0
+    CON0078.game_object = "NLO:U_O"
+    CON0078.property_name = "number_footstep"
+    CON0078.compare_value = 4
+    CON0078.operator = 0
+    CON0079.game_object = "NLO:U_O"
+    CON0079.property_name = "number_footstep"
+    CON0079.compare_value = 5
+    CON0079.operator = 0
+    CON0080.condition_a = ACT0086
+    CON0080.condition_b = CON0088
+    CON0081.condition_a = ACT0086
+    CON0081.condition_b = CON0089
+    CON0082.condition_a = ACT0086
+    CON0082.condition_b = CON0090
+    CON0083.condition_a = ACT0086
+    CON0083.condition_b = CON0091
+    CON0084.condition_a = ACT0086
+    CON0084.condition_b = CON0092
     CON0085.game_object = "NLO:U_O"
     CON0085.property_name = "number_footstep"
-    CON0085.compare_value = 4
+    CON0085.compare_value = 1
     CON0085.operator = 0
-    CON0086.game_object = "NLO:U_O"
-    CON0086.property_name = "number_footstep"
-    CON0086.compare_value = 5
-    CON0086.operator = 0
-    CON0087.condition_a = ACT0094
-    CON0087.condition_b = CON0096
-    CON0088.condition_a = ACT0094
-    CON0088.condition_b = CON0097
-    CON0089.condition_a = ACT0094
-    CON0089.condition_b = CON0098
-    CON0090.condition_a = ACT0094
-    CON0090.condition_b = CON0099
-    CON0091.condition_a = ACT0094
-    CON0091.condition_b = CON0100
-    CON0092.game_object = "NLO:U_O"
-    CON0092.property_name = "number_footstep"
-    CON0092.compare_value = 1
-    CON0092.operator = 0
-    CON0093.game_object = "NLO:CharacterController"
-    CON0093.use_mat = False
-    CON0093.prop = "type"
-    CON0093.material = None
-    CON0093.pulse = True
-    ACT0094.condition = CON0014
-    ACT0094.delay = PAR0016
-    CON0095.game_object = "NLO:U_O"
-    CON0095.property_name = "step_ground"
-    CON0095.compare_value = "water"
-    CON0095.operator = 0
-    CON0096.condition_a = CON0095
-    CON0096.condition_b = CON0092
-    CON0097.condition_a = CON0095
-    CON0097.condition_b = CON0083
-    CON0098.condition_a = CON0095
-    CON0098.condition_b = CON0084
-    CON0099.condition_a = CON0095
-    CON0099.condition_b = CON0085
-    CON0100.condition_a = CON0095
-    CON0100.condition_b = CON0086
-    ACT0101.condition = CON0087
-    ACT0101.speaker = "NLO:CharacterController"
-    ACT0101.sound = "D:/Sonic BGE Project/sounds/footsteps/007_water/00_sn_walk_watr_1.wav"
-    ACT0101.occlusion = False
-    ACT0101.transition = 0.10000000149011612
-    ACT0101.cutoff = 0.10000000149011612
-    ACT0101.device_custom = "default3D"
-    ACT0101.loop_count = 0
-    ACT0101.pitch = 1.0
-    ACT0101.volume = 1.0
-    ACT0101.attenuation = 1.0
-    ACT0101.distance_ref = 1.0
-    ACT0101.cone_angle = mathutils.Vector((360.0, 360.0))
-    ACT0101.cone_outer_volume = 0.0
-    ACT0102.condition = CON0088
-    ACT0102.speaker = "NLO:CharacterController"
-    ACT0102.sound = "D:/Sonic BGE Project/sounds/footsteps/007_water/00_sn_walk_watr_2.wav"
-    ACT0102.occlusion = False
-    ACT0102.transition = 0.10000000149011612
-    ACT0102.cutoff = 0.10000000149011612
-    ACT0102.device_custom = "default3D"
-    ACT0102.loop_count = 0
-    ACT0102.pitch = 1.0
-    ACT0102.volume = 1.0
-    ACT0102.attenuation = 1.0
-    ACT0102.distance_ref = 1.0
-    ACT0102.cone_angle = mathutils.Vector((360.0, 360.0))
-    ACT0102.cone_outer_volume = 0.0
-    ACT0103.condition = CON0089
-    ACT0103.speaker = "NLO:CharacterController"
-    ACT0103.sound = "D:/Sonic BGE Project/sounds/footsteps/007_water/00_sn_walk_watr_3.wav"
-    ACT0103.occlusion = False
-    ACT0103.transition = 0.10000000149011612
-    ACT0103.cutoff = 0.10000000149011612
-    ACT0103.device_custom = "default3D"
-    ACT0103.loop_count = 0
-    ACT0103.pitch = 1.0
-    ACT0103.volume = 1.0
-    ACT0103.attenuation = 1.0
-    ACT0103.distance_ref = 1.0
-    ACT0103.cone_angle = mathutils.Vector((360.0, 360.0))
-    ACT0103.cone_outer_volume = 0.0
-    ACT0104.condition = CON0090
-    ACT0104.speaker = "NLO:CharacterController"
-    ACT0104.sound = "D:/Sonic BGE Project/sounds/footsteps/007_water/00_sn_walk_watr_4.wav"
-    ACT0104.occlusion = False
-    ACT0104.transition = 0.10000000149011612
-    ACT0104.cutoff = 0.10000000149011612
-    ACT0104.device_custom = "default3D"
-    ACT0104.loop_count = 0
-    ACT0104.pitch = 1.0
-    ACT0104.volume = 1.0
-    ACT0104.attenuation = 1.0
-    ACT0104.distance_ref = 1.0
-    ACT0104.cone_angle = mathutils.Vector((360.0, 360.0))
-    ACT0104.cone_outer_volume = 0.0
-    ACT0105.condition = CON0091
-    ACT0105.speaker = "NLO:CharacterController"
-    ACT0105.sound = "D:/Sonic BGE Project/sounds/footsteps/007_water/00_sn_walk_watr_5.wav"
-    ACT0105.occlusion = False
-    ACT0105.transition = 0.10000000149011612
-    ACT0105.cutoff = 0.10000000149011612
-    ACT0105.device_custom = "default3D"
-    ACT0105.loop_count = 0
-    ACT0105.pitch = 1.0
-    ACT0105.volume = 1.0
-    ACT0105.attenuation = 1.0
-    ACT0105.distance_ref = 1.0
-    ACT0105.cone_angle = mathutils.Vector((360.0, 360.0))
-    ACT0105.cone_outer_volume = 0.0
+    ACT0086.condition = CON0009
+    ACT0086.delay = PAR0011
+    CON0087.game_object = "NLO:U_O"
+    CON0087.property_name = "step_ground"
+    CON0087.compare_value = "water"
+    CON0087.operator = 0
+    CON0088.condition_a = CON0087
+    CON0088.condition_b = CON0085
+    CON0089.condition_a = CON0087
+    CON0089.condition_b = CON0076
+    CON0090.condition_a = CON0087
+    CON0090.condition_b = CON0077
+    CON0091.condition_a = CON0087
+    CON0091.condition_b = CON0078
+    CON0092.condition_a = CON0087
+    CON0092.condition_b = CON0079
+    ACT0093.condition = CON0080
+    ACT0093.speaker = "NLO:CharacterController"
+    ACT0093.sound = "D:/Sonic BGE Project/sounds/footsteps/007_water/00_sn_walk_watr_1.wav"
+    ACT0093.occlusion = False
+    ACT0093.transition = 0.10000000149011612
+    ACT0093.cutoff = 0.10000000149011612
+    ACT0093.device_custom = "default3D"
+    ACT0093.loop_count = 0
+    ACT0093.pitch = 1.0
+    ACT0093.volume = 1.0
+    ACT0093.attenuation = 1.0
+    ACT0093.distance_ref = 1.0
+    ACT0093.cone_angle = mathutils.Vector((360.0, 360.0))
+    ACT0093.cone_outer_volume = 0.0
+    ACT0094.condition = CON0081
+    ACT0094.speaker = "NLO:CharacterController"
+    ACT0094.sound = "D:/Sonic BGE Project/sounds/footsteps/007_water/00_sn_walk_watr_2.wav"
+    ACT0094.occlusion = False
+    ACT0094.transition = 0.10000000149011612
+    ACT0094.cutoff = 0.10000000149011612
+    ACT0094.device_custom = "default3D"
+    ACT0094.loop_count = 0
+    ACT0094.pitch = 1.0
+    ACT0094.volume = 1.0
+    ACT0094.attenuation = 1.0
+    ACT0094.distance_ref = 1.0
+    ACT0094.cone_angle = mathutils.Vector((360.0, 360.0))
+    ACT0094.cone_outer_volume = 0.0
+    ACT0095.condition = CON0082
+    ACT0095.speaker = "NLO:CharacterController"
+    ACT0095.sound = "D:/Sonic BGE Project/sounds/footsteps/007_water/00_sn_walk_watr_3.wav"
+    ACT0095.occlusion = False
+    ACT0095.transition = 0.10000000149011612
+    ACT0095.cutoff = 0.10000000149011612
+    ACT0095.device_custom = "default3D"
+    ACT0095.loop_count = 0
+    ACT0095.pitch = 1.0
+    ACT0095.volume = 1.0
+    ACT0095.attenuation = 1.0
+    ACT0095.distance_ref = 1.0
+    ACT0095.cone_angle = mathutils.Vector((360.0, 360.0))
+    ACT0095.cone_outer_volume = 0.0
+    ACT0096.condition = CON0083
+    ACT0096.speaker = "NLO:CharacterController"
+    ACT0096.sound = "D:/Sonic BGE Project/sounds/footsteps/007_water/00_sn_walk_watr_4.wav"
+    ACT0096.occlusion = False
+    ACT0096.transition = 0.10000000149011612
+    ACT0096.cutoff = 0.10000000149011612
+    ACT0096.device_custom = "default3D"
+    ACT0096.loop_count = 0
+    ACT0096.pitch = 1.0
+    ACT0096.volume = 1.0
+    ACT0096.attenuation = 1.0
+    ACT0096.distance_ref = 1.0
+    ACT0096.cone_angle = mathutils.Vector((360.0, 360.0))
+    ACT0096.cone_outer_volume = 0.0
+    ACT0097.condition = CON0084
+    ACT0097.speaker = "NLO:CharacterController"
+    ACT0097.sound = "D:/Sonic BGE Project/sounds/footsteps/007_water/00_sn_walk_watr_5.wav"
+    ACT0097.occlusion = False
+    ACT0097.transition = 0.10000000149011612
+    ACT0097.cutoff = 0.10000000149011612
+    ACT0097.device_custom = "default3D"
+    ACT0097.loop_count = 0
+    ACT0097.pitch = 1.0
+    ACT0097.volume = 1.0
+    ACT0097.attenuation = 1.0
+    ACT0097.distance_ref = 1.0
+    ACT0097.cone_angle = mathutils.Vector((360.0, 360.0))
+    ACT0097.cone_outer_volume = 0.0
+    CON0098.game_object = "NLO:U_O"
+    CON0098.property_name = "step_ground"
+    CON0098.compare_value = "metal"
+    CON0098.operator = 0
+    CON0099.condition_a = ACT0116
+    CON0099.condition_b = CON0107
+    CON0100.game_object = "NLO:U_O"
+    CON0100.property_name = "step_ground"
+    CON0100.compare_value = "concrete"
+    CON0100.operator = 0
+    PAR0101.game_object = "NLO:RayRotate"
+    PAR0101.attribute_name = "worldPosition"
+    PAR0102.game_object = "NLO:CharacterController"
+    PAR0102.attribute_name = "worldPosition"
+    CON0104.game_object = "NLO:CharacterController"
+    CON0104.use_mat = False
+    CON0104.prop = "type"
+    CON0104.material = None
+    CON0104.pulse = True
+    PAR0105.game_object = ACT0116.PICKED_OBJECT
+    PAR0105.property_name = "type"
+    ACT0106.condition = ACT0116
+    ACT0106.game_object = "NLO:U_O"
+    ACT0106.property_name = "step_ground"
+    ACT0106.property_value = PAR0105
+    CON0107.game_object = "NLO:U_O"
+    CON0107.property_name = "animation"
+    CON0107.compare_value = "walk"
+    CON0107.operator = 0
+    CON0108.game_object = "NLO:U_O"
+    CON0108.property_name = "animation"
+    CON0108.compare_value = "jog"
+    CON0108.operator = 0
+    ACT0109.condition = ACT0114
+    ACT0109.sound = ACT0115.HANDLE
+    PAR0110.game_object = "NLO:U_O"
+    PAR0110.property_name = "isSliding"
+    CON0111.game_object = "NLO:CharacterController"
+    CON0111.property_name = "isSliding"
+    CON0111.compare_value = True
+    CON0111.operator = 0
+    ACT0112.condition = CON0111
+    ACT0112.delay = 1.2999999523162842
+    CON0113.monitored_value = PAR0110
+    CON0113.trigger_value = False
+    ACT0114.condition = CON0113
+    ACT0114.delay = 0.0
+    ACT0115.condition = ACT0112
+    ACT0115.speaker = "NLO:CharacterController"
+    ACT0115.sound = "C:/Users/firef/OneDrive/Área de Trabalho/37_sn_sliding_lp.mp3"
+    ACT0115.occlusion = False
+    ACT0115.transition = 0.10000000149011612
+    ACT0115.cutoff = 0.10000000149011612
+    ACT0115.device_custom = "default3D"
+    ACT0115.loop_count = 0
+    ACT0115.pitch = 1.0
+    ACT0115.volume = 1.0
+    ACT0115.attenuation = 1.0
+    ACT0115.distance_ref = 1.0
+    ACT0115.cone_angle = mathutils.Vector((360.0, 360.0))
+    ACT0115.cone_outer_volume = 0.0
+    ACT0116.condition = CON0103
+    ACT0116.origin = PAR0102
+    ACT0116.destination = PAR0101
+    ACT0116.local = False
+    ACT0116.property_name = "type"
+    ACT0116.xray = False
+    ACT0116.custom_dist = False
+    ACT0116.distance = 100.0
+    ACT0116.visualize = False
     network.add_cell(CON0000)
-    network.add_cell(CON0002)
-    network.add_cell(CON0008)
-    network.add_cell(CON0012)
-    network.add_cell(PAR0016)
+    network.add_cell(CON0006)
+    network.add_cell(PAR0011)
+    network.add_cell(CON0025)
+    network.add_cell(CON0027)
+    network.add_cell(CON0029)
+    network.add_cell(CON0045)
+    network.add_cell(CON0047)
+    network.add_cell(CON0049)
+    network.add_cell(CON0054)
+    network.add_cell(CON0056)
+    network.add_cell(CON0058)
+    network.add_cell(CON0075)
+    network.add_cell(CON0077)
+    network.add_cell(CON0079)
+    network.add_cell(CON0085)
+    network.add_cell(CON0087)
+    network.add_cell(CON0090)
+    network.add_cell(CON0092)
+    network.add_cell(CON0098)
+    network.add_cell(CON0100)
+    network.add_cell(PAR0102)
+    network.add_cell(CON0104)
+    network.add_cell(CON0107)
+    network.add_cell(PAR0110)
+    network.add_cell(CON0113)
+    network.add_cell(CON0001)
+    network.add_cell(ACT0008)
+    network.add_cell(CON0026)
     network.add_cell(CON0030)
     network.add_cell(CON0032)
     network.add_cell(CON0034)
-    network.add_cell(CON0051)
+    network.add_cell(CON0043)
+    network.add_cell(CON0046)
+    network.add_cell(CON0050)
     network.add_cell(CON0053)
-    network.add_cell(CON0055)
-    network.add_cell(CON0060)
-    network.add_cell(CON0062)
-    network.add_cell(CON0064)
-    network.add_cell(CON0081)
-    network.add_cell(CON0083)
-    network.add_cell(CON0085)
-    network.add_cell(CON0092)
-    network.add_cell(CON0095)
-    network.add_cell(CON0097)
+    network.add_cell(CON0057)
+    network.add_cell(CON0065)
+    network.add_cell(CON0067)
+    network.add_cell(CON0076)
+    network.add_cell(CON0088)
+    network.add_cell(PAR0101)
+    network.add_cell(CON0108)
+    network.add_cell(CON0111)
+    network.add_cell(ACT0114)
+    network.add_cell(ACT0005)
+    network.add_cell(CON0028)
+    network.add_cell(CON0033)
+    network.add_cell(CON0048)
+    network.add_cell(CON0052)
+    network.add_cell(CON0059)
+    network.add_cell(CON0066)
+    network.add_cell(CON0069)
+    network.add_cell(CON0078)
+    network.add_cell(CON0089)
+    network.add_cell(CON0103)
+    network.add_cell(ACT0112)
+    network.add_cell(ACT0116)
+    network.add_cell(CON0002)
+    network.add_cell(CON0004)
+    network.add_cell(ACT0012)
+    network.add_cell(ACT0024)
+    network.add_cell(CON0051)
+    network.add_cell(CON0068)
+    network.add_cell(CON0091)
     network.add_cell(CON0099)
-    network.add_cell(CON0001)
+    network.add_cell(ACT0115)
+    network.add_cell(CON0003)
+    network.add_cell(CON0009)
     network.add_cell(ACT0013)
     network.add_cell(CON0031)
-    network.add_cell(CON0035)
-    network.add_cell(CON0037)
-    network.add_cell(CON0040)
-    network.add_cell(CON0049)
-    network.add_cell(CON0052)
-    network.add_cell(CON0056)
-    network.add_cell(CON0059)
-    network.add_cell(CON0063)
-    network.add_cell(CON0072)
-    network.add_cell(CON0074)
-    network.add_cell(CON0082)
-    network.add_cell(CON0086)
-    network.add_cell(CON0093)
-    network.add_cell(CON0096)
-    network.add_cell(CON0100)
-    network.add_cell(CON0003)
-    network.add_cell(CON0005)
+    network.add_cell(ACT0086)
+    network.add_cell(PAR0105)
+    network.add_cell(ACT0109)
     network.add_cell(ACT0007)
-    network.add_cell(PAR0010)
-    network.add_cell(ACT0015)
-    network.add_cell(ACT0018)
-    network.add_cell(CON0033)
-    network.add_cell(CON0038)
-    network.add_cell(CON0054)
-    network.add_cell(CON0058)
-    network.add_cell(CON0065)
-    network.add_cell(CON0071)
-    network.add_cell(CON0075)
-    network.add_cell(CON0084)
-    network.add_cell(CON0098)
-    network.add_cell(CON0004)
-    network.add_cell(ACT0009)
-    network.add_cell(ACT0017)
-    network.add_cell(CON0036)
-    network.add_cell(CON0057)
-    network.add_cell(CON0073)
-    network.add_cell(CON0006)
     network.add_cell(CON0014)
-    network.add_cell(ACT0029)
-    network.add_cell(ACT0094)
-    network.add_cell(ACT0011)
-    network.add_cell(CON0020)
-    network.add_cell(CON0022)
-    network.add_cell(ACT0024)
-    network.add_cell(ACT0028)
-    network.add_cell(CON0046)
-    network.add_cell(CON0048)
+    network.add_cell(CON0016)
+    network.add_cell(CON0018)
+    network.add_cell(ACT0020)
+    network.add_cell(ACT0022)
+    network.add_cell(CON0040)
+    network.add_cell(CON0042)
+    network.add_cell(CON0055)
     network.add_cell(CON0061)
-    network.add_cell(CON0067)
-    network.add_cell(CON0069)
-    network.add_cell(ACT0077)
-    network.add_cell(ACT0079)
-    network.add_cell(CON0087)
-    network.add_cell(CON0089)
-    network.add_cell(CON0091)
-    network.add_cell(ACT0103)
-    network.add_cell(ACT0105)
-    network.add_cell(CON0021)
-    network.add_cell(ACT0026)
-    network.add_cell(CON0039)
-    network.add_cell(ACT0042)
-    network.add_cell(ACT0045)
-    network.add_cell(CON0050)
-    network.add_cell(CON0068)
-    network.add_cell(ACT0078)
-    network.add_cell(CON0088)
-    network.add_cell(ACT0101)
-    network.add_cell(CON0019)
-    network.add_cell(ACT0027)
-    network.add_cell(ACT0043)
-    network.add_cell(CON0047)
-    network.add_cell(CON0070)
-    network.add_cell(ACT0080)
-    network.add_cell(ACT0102)
-    network.add_cell(CON0023)
-    network.add_cell(ACT0041)
-    network.add_cell(CON0066)
-    network.add_cell(CON0090)
-    network.add_cell(ACT0025)
-    network.add_cell(ACT0076)
-    network.add_cell(ACT0044)
-    network.add_cell(ACT0104)
+    network.add_cell(CON0063)
+    network.add_cell(ACT0071)
+    network.add_cell(ACT0073)
+    network.add_cell(CON0080)
+    network.add_cell(CON0082)
+    network.add_cell(CON0084)
+    network.add_cell(ACT0095)
+    network.add_cell(ACT0097)
+    network.add_cell(ACT0010)
+    network.add_cell(CON0017)
+    network.add_cell(ACT0021)
+    network.add_cell(ACT0036)
+    network.add_cell(ACT0039)
+    network.add_cell(CON0044)
+    network.add_cell(CON0062)
+    network.add_cell(ACT0072)
+    network.add_cell(CON0081)
+    network.add_cell(ACT0093)
+    network.add_cell(ACT0106)
+    network.add_cell(CON0015)
+    network.add_cell(ACT0023)
+    network.add_cell(ACT0037)
+    network.add_cell(CON0041)
+    network.add_cell(CON0064)
+    network.add_cell(ACT0074)
+    network.add_cell(ACT0094)
+    network.add_cell(ACT0019)
+    network.add_cell(ACT0038)
+    network.add_cell(CON0083)
+    network.add_cell(ACT0035)
+    network.add_cell(ACT0096)
+    network.add_cell(CON0060)
+    network.add_cell(ACT0070)
     owner["IGNLTree_footstep"] = network
     network._owner = owner
     network.setup()

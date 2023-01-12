@@ -7,42 +7,49 @@ import math
 def _initialize(owner):
     network = nodes.LogicNetwork()
     PAR0000 = nodes.ParameterObjectAttribute()
-    ACT0001 = nodes.ActionSetObjectAttribute()
-    ACT0002 = nodes.ActionSetGameObjectGameProperty()
-    ACT0003 = nodes.ActionApplyForce()
-    CON0004 = nodes.ConditionCollision()
-    ACT0005 = nodes.ActionSetObjectAttribute()
-    PAR0000.game_object = "NLO:grounDashSensor"
+    ACT0001 = nodes.ActionSetGameObjectGameProperty()
+    ACT0002 = nodes.ActionApplyForce()
+    CON0003 = nodes.ConditionCollision()
+    ACT0004 = nodes.ActionSetObjectAttribute()
+    ACT0005 = nodes.ActionStartSound()
+    ACT0006 = nodes.ActionSetObjectAttribute()
+    PAR0000.game_object = "NLO:U_O"
     PAR0000.attribute_name = "worldOrientation"
-    ACT0001.condition = CON0004
-    ACT0001.xyz = {'x': True, 'y': True, 'z': True}
-    ACT0001.game_object = "NLO:cameraController"
-    ACT0001.attribute_value = PAR0000
-    ACT0001.value_type = 'worldOrientation'
-    ACT0002.condition = CON0004
+    ACT0001.condition = CON0003
+    ACT0001.game_object = "NLO:CharacterController"
+    ACT0001.property_name = "Speed"
+    ACT0001.property_value = 1.0299999713897705
+    ACT0002.local = True
+    ACT0002.condition = CON0003
     ACT0002.game_object = "NLO:CharacterController"
-    ACT0002.property_name = "Speed"
-    ACT0002.property_value = 1.0299999713897705
-    ACT0003.local = True
-    ACT0003.condition = CON0004
-    ACT0003.game_object = "NLO:CharacterController"
-    ACT0003.force = mathutils.Vector((0.0, 500.0, 0.0))
-    CON0004.game_object = "NLO:grounDashSensor"
-    CON0004.use_mat = False
-    CON0004.prop = "player"
-    CON0004.material = None
-    CON0004.pulse = True
-    ACT0005.condition = CON0004
-    ACT0005.xyz = {'x': True, 'y': True, 'z': True}
-    ACT0005.game_object = "NLO:CharacterController"
-    ACT0005.attribute_value = PAR0000
-    ACT0005.value_type = 'worldOrientation'
+    ACT0002.force = mathutils.Vector((0.0, 800.0, 0.0))
+    CON0003.game_object = "NLO:grounDashSensor"
+    CON0003.use_mat = False
+    CON0003.prop = "player"
+    CON0003.material = None
+    CON0003.pulse = True
+    ACT0004.condition = CON0003
+    ACT0004.xyz = {'x': True, 'y': True, 'z': True}
+    ACT0004.game_object = "NLO:CharacterController"
+    ACT0004.attribute_value = PAR0000
+    ACT0004.value_type = 'worldOrientation'
+    ACT0005.condition = None
+    ACT0005.sound = "None"
+    ACT0005.loop_count = 0
+    ACT0005.pitch = 1.0
+    ACT0005.volume = 1.0
+    ACT0006.condition = CON0003
+    ACT0006.xyz = {'x': True, 'y': True, 'z': True}
+    ACT0006.game_object = "NLO:cameraController"
+    ACT0006.attribute_value = PAR0000
+    ACT0006.value_type = 'worldOrientation'
     network.add_cell(PAR0000)
-    network.add_cell(CON0004)
-    network.add_cell(ACT0001)
-    network.add_cell(ACT0003)
-    network.add_cell(ACT0002)
+    network.add_cell(CON0003)
     network.add_cell(ACT0005)
+    network.add_cell(ACT0001)
+    network.add_cell(ACT0004)
+    network.add_cell(ACT0002)
+    network.add_cell(ACT0006)
     owner["IGNLTree_GroundDashP"] = network
     network._owner = owner
     network.setup()
