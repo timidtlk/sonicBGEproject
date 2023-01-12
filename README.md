@@ -58,7 +58,7 @@ UPBGE 0.3 is really poor optimized and rarely a low-end computer will can run it
 - GPU: GT 1030 with 2GB VRAM
 - RAM: 8GB
 - OpenGL: 4.3+ minimum
-- SO: Windows 8.1 or an Linux Ubuntu based version minimum
+- SO: Windows 8.1 or a Linux Ubuntu based version minimum
 
 ## 📝 License
 
