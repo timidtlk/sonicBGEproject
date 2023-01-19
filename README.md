@@ -62,7 +62,7 @@ UPBGE 0.3 is really poor optimized and rarely a low-end computer will can run it
 
 ## 📝 License
 
-This project is over license GNU-GPL v2.0 . Check the file [LICENSE](LICENSE.md) for more details.
+This project is over the MIT license. Check the file [LICENSE](LICENSE.md) for more details.
 
 [⬆ Go back to the top](#nome-do-projeto)<br>
 
