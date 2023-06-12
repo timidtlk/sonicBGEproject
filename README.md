@@ -60,6 +60,13 @@ UPBGE 0.3 is really poor optimized and rarely a low-end computer will can run it
 - OpenGL: 4.3+ minimum
 - SO: Windows 8.1 or a Linux Ubuntu based version minimum
 
+##### Recommended:
+- CPU: Intel Core i5 10400f / AMD Ryzen 5 4500
+- GPU: Nvidia RTX 3050 / Radeon RX 6600XT
+- RAM: 16GB
+- OpenGL: 4.3+ minimum
+- SO: Windows 10 or a Linux Ubuntu based version
+
 ## 📝 License
 
 This project is over the MIT license. Check the file [LICENSE](LICENSE) for more details.
